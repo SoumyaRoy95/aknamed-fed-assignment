@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex: 100%;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+.products-catalog {
+    background-color: white;
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    margin: 2%;
+    padding-left: 2%;
+}

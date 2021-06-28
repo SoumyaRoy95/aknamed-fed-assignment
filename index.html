@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" 
+    integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/main.css" />
+    <script src="./js/login.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <div class="logo"></div>
+       <img src="images/rp-logo.png" alt="RedpandaLogo"/>
+   </div>
+   <div class="container">
+       <h3 color="white">WELCOME TO REDPANDA HTML - CSS BASIC FEED TEMPLATE</h3>
+       <p color="white">The RedPanda is a team of pragmatic engineers who care deeply about the quality of their products and the success of their partners. Over the years, we have mastered best practices in building software products from concept to scale and we continue to learn emerging technology</p>
+       <div class="form-container">
+           <h4>PLEASE LOG IN</h4>
+           <div class="form-group">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Email Or Username" id="username" />
+           </div>
+           <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Password" id="password" />
+           </div>           
+           <div>
+            <input type="checkbox" id="rememberme" name="rememberme" />
+            <label for="rememberme">Remember Me</label>
+           </div>
+           <br />
+           <input type="submit" value="LOG IN" onclick="login()"/>
+       </div>
+   </div>
+</body>
+</html>

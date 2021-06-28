@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="js/navbar.js"></script>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./scss/dashboard.css" />
+</head>
+<body>
+    <div id="sidebar" onclick="toggle()">
+        <div class="toggle-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li>Dashboard</li>
+            <li>Products Catalog</li>
+        </ul>
+    </div>
+    <div class="header-bar">
+        <h3>PROGRESS INFORMATION</h3>
+        <div class="four-blocks">
+            <div class="holders">
+                <div class="total-profit">
+                    <div class="info">
+                        <div>
+                            <h3>Total Profit</h3>                   
+                            <p>Profit</p>
+                        </div>                  
+                        <div>
+                            <h2>$18M</h2>
+                        </div>
+                    </div>               
+                    <div class="progress">
+                        <div class="progress-profit">
+                        </div>
+                    </div>
+                    <div class="change-status">
+                        <div>
+                            <p>Change</p>
+                        </div>
+                        <div>
+                            <p>70%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="info1">
+                        <div>
+                            <h3>Feedback</h3>                   
+                            <p>Customer Review</p>
+                        </div>                  
+                        <div>
+                            <h2>134</h2>
+                        </div>
+                    </div>  
+                    <div class="progress-feedback">
+                        <div class="progress-feedback-status">
+                        </div>
+                    </div>
+                    <div class="change-status">
+                        <div>
+                            <p>Change</p>
+                        </div>
+                        <div>
+                            <p>89%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="holders">
+                <div class="new-profits">
+                    <div class="new-info">
+                        <div>
+                            <h3>New Orders</h3>                   
+                            <p>Orders Progress</p>
+                        </div>                  
+                        <div>
+                            <h2>160</h2>
+                        </div>
+                    </div> 
+                    <div class="progress-newinfo">
+                        <div class="progress-newinfo-status">
+                        </div>
+                    </div>
+                    <div class="change-status">
+                        <div>
+                            <p>Change</p>
+                        </div>
+                        <div>
+                            <p>55%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-users">
+                    <div class="new-userinfo">
+                        <div>
+                            <h3>New Users</h3>                   
+                            <p>Joined Users</p>
+                        </div>                  
+                        <div>
+                            <h2>160</h2>
+                        </div>
+                    </div> 
+                    <div class="progress-newuserinfo">
+                        <div class="progress-newuserinfo-status">
+                        </div>
+                    </div>
+                    <div class="change-status">
+                        <div>
+                            <p>Change</p>
+                        </div>
+                        <div>
+                            <p>55%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="table-group">
+            <h3>RECENTLY REFERRALS</h3>
+            <p>Blocks with Recently Referrals information</p>
+            <table class="referral-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Age</th>
+                        <th>Office</th>
+                        <th>Date</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Damon</td>
+                        <td>5516, Adolfo Green</td>
+                        <td>18</td>
+                        <td>Littehaven</td>
+                        <td>2014/06/03</td>
+                        <td>553.536</td>
+                    </tr>
+                    <tr>
+                        <td>Damon</td>
+                        <td>5516, Adolfo Green</td>
+                        <td>18</td>
+                        <td>Littehaven</td>
+                        <td>2014/06/03</td>
+                        <td>553.536</td>
+                    </tr>
+                    <tr>
+                        <td>Damon</td>
+                        <td>5516, Adolfo Green</td>
+                        <td>18</td>
+                        <td>Littehaven</td>
+                        <td>2014/06/03</td>
+                        <td>553.536</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>YOUR CARDS (3)</h3>
+        <div class="holders">
+            <div class="card">
+                <i class="fas fa-male"></i>
+                <h2>David Beckham</h2>
+                <p>8748-XXXX-1564-3411</p>
+                <h4>MASTERCARD</h4>
+                <p class="sub-para">Expires at 03/22</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-male"></i>
+                <h2>David Beckham</h2>
+                <p>8748-XXXX-1564-3411</p>
+                <h4>MASTERCARD</h4>
+                <p class="sub-para">Expires at 03/22</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-male"></i>
+                <h2>David Beckham</h2>
+                <p>8748-XXXX-1564-3411</p>
+                <h4>MASTERCARD</h4>
+                <p class="sub-para">Expires at 03/22</p>
+            </div>
+        </div>
+        <h3 style="margin-top: 2%;">YOUR TEAMS (4)</h3>
+        <div class="holders">
+            <div class="teams-card">
+                <h3>Team 1</h3>
+                <p class="members-para">Members</p>
+                <p class="sub-para">Currently not charged:</p>
+                <p class="sub-para">$12,500.00</p>
+            </div>
+            <div class="teams-card">
+                <h3>Team 1</h3>
+                <p class="members-para">Members</p>
+                <p class="sub-para">Currently not charged:</p>
+                <p class="sub-para">$15,000.00</p>
+            </div>
+            <div class="teams-card">
+                <h3>Team 1</h3>
+                <p class="members-para">Members</p>
+                <p class="sub-para">Currently not charged:</p>
+                <p class="sub-para">$12,500.00</p>
+            </div>
+            <div class="teams-card">
+                <h3>Team 1</h3>
+                <p class="members-para">Members</p>
+                <p class="sub-para">Currently not charged:</p>
+                <p class="sub-para">$10,200.00</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 190px;
+  left: -20%;
+  background-color: gray;
+}
+
+#sidebar li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
+
+#sidebar li:hover {
+  background-color: cadetblue;
+}
+
+.toggle-button {
+  position: absolute;
+  left: 105%;
+  top: 15px;
+}
+
+.toggle-button span {
+  display: block;
+  background-color: black;
+  height: 3px;
+  width: 25px;
+  margin: 2px;
+}
+
+#sidebar.active {
+  left: 0%;
+}
+
+.header-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: lightgray;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 45px;
+  padding-left: 15px;
+  height: 100%;
+}
+
+.header-bar h3 {
+  margin-bottom: 20px;
+}
+
+.holders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+.total-profit {
+  background-color: white;
+  width: 35%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.total-profit p {
+  margin-top: 2px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info h2 {
+  color: blue;
+}
+
+.progress {
+  background-color: lightgray;
+  border-radius: 20px;
+  height: 10px;
+  width: 95%;
+}
+
+.progress .progress-profit {
+  background-color: blue;
+  border-radius: 20px;
+  height: 10px;
+  width: 70%;
+}
+
+.change-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3px;
+}
+
+.feedback {
+  background-color: white;
+  width: 35%;
+  margin-left: 2%;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.feedback p {
+  margin-top: 2px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.info1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info1 h2 {
+  color: green;
+}
+
+.progress-feedback {
+  background-color: lightgray;
+  border-radius: 20px;
+  height: 10px;
+  width: 95%;
+}
+
+.progress-feedback .progress-feedback-status {
+  background-color: green;
+  border-radius: 20px;
+  height: 10px;
+  width: 89%;
+}
+
+.new-profits {
+  background-color: white;
+  width: 35%;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.new-profits p {
+  margin-top: 2px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.new-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.new-info h2 {
+  color: red;
+}
+
+.progress-newinfo {
+  background-color: lightgray;
+  border-radius: 20px;
+  height: 10px;
+  width: 95%;
+}
+
+.progress-newinfo .progress-newinfo-status {
+  background-color: red;
+  border-radius: 20px;
+  height: 10px;
+  width: 55%;
+}
+
+.new-users {
+  background-color: white;
+  width: 35%;
+  margin-left: 2%;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.new-users p {
+  margin-top: 2px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.new-userinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.new-userinfo h2 {
+  color: gray;
+}
+
+.progress-newuserinfo {
+  background-color: lightgray;
+  border-radius: 20px;
+  height: 10px;
+  width: 95%;
+}
+
+.progress-newuserinfo .progress-newuserinfo-status {
+  background-color: gray;
+  border-radius: 20px;
+  height: 10px;
+  width: 55%;
+}
+
+.table-group {
+  background-color: white;
+  width: 74%;
+  border-radius: 10px;
+  padding: 15px;
+  margin-left: 5px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.table-group p {
+  margin-top: 2px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.referral-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+.referral-table thead tr {
+  background-color: lightgray;
+  text-align: left;
+  font-weight: bold;
+}
+
+.referral-table th, .referral-table td {
+  padding: 12px 15px;
+}
+
+.referral-table tbody tr {
+  border-bottom: 1px solid lightgray;
+}
+
+.referral-table tbody tr:last-of-type {
+  border-bottom: 2px solid white;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  width: 24%;
+  padding: 2px;
+  margin-right: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card h4 {
+  border-bottom: 1px solid lightgray;
+  color: gray;
+  padding: 15px;
+}
+
+.card p {
+  color: gray;
+}
+
+.card .sub-para {
+  font-style: italic;
+  padding: 15px;
+}
+
+.teams-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  width: 13%;
+  padding: 30px;
+  margin-right: 2%;
+}
+
+.teams-card p {
+  text-align: center;
+  color: gray;
+}
+
+.teams-card .members-para {
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.teams-card .sub-para {
+  font-style: italic;
+  padding: 10px;
+}
+/*# sourceMappingURL=dashboard.css.map */

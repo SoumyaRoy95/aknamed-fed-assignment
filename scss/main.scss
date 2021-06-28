@@ -1,0 +1,47 @@
+body{
+    background: url(../images/login-bg.jpg) no-repeat center fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+h2 {
+    color: red
+}
+
+.logo{
+    margin: 10px;
+    height: 50%;
+    width: 50%;
+}
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 300px;
+}
+.container h3{
+    color: white;
+}
+.container p{
+    color: white;
+    text-align: center;
+}
+.form-container{
+    background-color: white;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    width: 400px;
+}
+.form-group{
+    align-items: space-around;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+}
