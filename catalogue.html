@@ -4,17 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Catalog</title>
+    <script src="js/navbar.js"></script>
     <link rel="stylesheet" href="./scss/catalogue.css" />
 </head>
 <body>
-    <div class="products-catalog">
-        <h3>PRODUCTS CATALOG</h3>
-        <div class="products-row">
-            <div class="product-card">
-                
+    <header>
+        <img class="logo" src="./images/rp-logo.png" alt="logo">
+        <img class="avatar" src="./images/1.jpg" alt="avatar">
+    </header>
+    <div class="products-container">
+        <div id="sidebar" onclick="toggle()">
+            <div class="toggle-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li onclick="toDashboard()">Dashboard</li>
+                <li style="background-color: aquamarine;">Products Catalog</li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="products-catalog">
+                <h3>PRODUCTS CATALOG</h3>
+                <div class="products-row">
+                    <div class="product-card">
+                        <img class="product-photo" src="./images//001.jpg" alt="product-photo">
+                        <div class="product-details">
+                            <p>ELLIOT GLASSES</p>
+                            <h3>$199.00</h3>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="product-photo" src="./images//002.jpg" alt="product-photo">
+                        <div class="product-details">
+                            <p>MAXTOR CHAIR</p>
+                            <h3>$245.00</h3>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="product-photo" src="./images//003.jpg" alt="product-photo">
+                        <div class="product-details">
+                            <p>MANROAD GLASSES</p>
+                            <h3>$300.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-row">
+                    <div class="product-card">
+                        <img class="product-photo" src="./images//004.jpg" alt="product-photo">
+                        <div class="product-details">
+                            <p>ALIGN GLASSES</p>
+                            <h3>$199.00</h3>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="product-photo" src="./images//001.jpg" alt="product-photo">
+                        <div class="product-details">
+                            <p>MAXTOR CHAIR</p>
+                            <h3>$245.00</h3>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="product-photo" src="./images//002.jpg" alt="product-photo">
+                        <div class="product-details">
+                            <p>MANROAD GLASSES</p>
+                            <h3>$300.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-row">
+                    <div class="product-card">
+                        <img class="product-photo" src="./images//003.jpg" alt="product-photo">
+                        <div class="product-details">
+                            <p>ELLIOT GLASSES</p>
+                            <h3>$199.00</h3>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="product-photo" src="./images//004.jpg" alt="product-photo">
+                        <div class="product-details">
+                            <p>MAXTOR CHAIR</p>
+                            <h3>$245.00</h3>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="product-photo" src="./images//001.jpg" alt="product-photo">
+                        <div class="product-details">
+                            <p>ALIGN GLASSES</p>
+                            <h3>$300.00</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
     </div>
+    
 </body>
 </html>

@@ -3,41 +3,62 @@
   padding: 0;
 }
 
-body {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  background-color: black;
+  height: 49px;
+}
+
+header .avatar {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  padding: 8px;
+}
+
+.dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
+  position: relative;
   height: 100%;
   width: 190px;
-  left: -20%;
-  background-color: gray;
 }
 
 #sidebar li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
   padding: 20px;
   width: 100%;
+  cursor: pointer;
 }
 
 #sidebar li:hover {
-  background-color: cadetblue;
+  background-color: aquamarine;
 }
 
 .toggle-button {
   position: absolute;
+  display: none;
   left: 105%;
   top: 15px;
 }

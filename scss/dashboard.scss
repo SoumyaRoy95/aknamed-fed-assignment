@@ -2,31 +2,47 @@
     margin: 0;
     padding: 0;
 }
-body{
+header{
     display: flex;
-    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        background-color: black;
+        height: 49px;
+    }
+    .avatar {
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        border-radius: 30%;
+        padding: 8px;
+      }
 }
+
+.dashboard {
+    display: flex;
+}
+
 #sidebar {
     display: flex;
-    position: fixed;
+    position: relative;
     height: 100%;
     width: 190px;
-    left: -20%;
-    background-color: gray;
     li {
         display: flex;
-        color: white;
         padding: 20px;
         width: 100%;
+        cursor: pointer;
 
         &:hover{
-            background-color: cadetblue;
+            background-color: aquamarine;
         }
     }
 }
 
 .toggle-button {
     position: absolute;
+    display: none;
     left: 105%;
     top: 15px;
     span {

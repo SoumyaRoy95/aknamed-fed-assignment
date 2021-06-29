@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="./scss/sproduct.css" />
+    <script src="js/navbar.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./images/rp-logo.png" alt="logo">
+        <img class="avatar" src="./images/1.jpg" alt="avatar">
+    </header>
+    <div class="container">
+        <div id="sidebar" onclick="toggle()">
+            <div class="toggle-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li onclick="toDashboard()">Dashboard</li>
+                <li onclick="toCatalogue()">Products Catalog</li>
+            </ul>
+        </div>
+        <div class="product-details">
+            <div>
+                <button class="backbutton" onclick="toCatalogue()">Back</button>
+            </div>
+            
+            <div class="details">
+                <h3>PRODUCT DETAILS</h3>
+                <div class="product-image">
+                    <div class="image-prod">
+                        <img src="./images/001.jpg" alt="img-prod">
+                    </div>
+                    
+                    <div class="specificatios">
+                        <h1>Beautiful Chair for Kids</h1>
+
+                        <div class="pricetag">
+                            <h1>$188.95</h1>
+                            <h3>$225.00</h3>
+                        </div>
+                        <div class="description">
+                            <p>Bring in the comfort to your house. Designed for comfort. Relax like a boss. 
+                                Let nothing get in the way of your comfort. Super soft cushioning to keep you relaxed.
+                                Nothing relaxes you better.    
+                            </p>
+                        </div>
+                        <div class="sizes">
+                            <h4>Available Sizes</h4>
+                            <div class="pills">
+                                <div class="pill">S</div>
+                                <div class="pill">M</div>
+                                <div class="pill">XL</div>
+                            </div>
+                        </div>
+                        <div class="about-seller">
+                            <h4>About Seller</h4>
+                        </div>
+                        <div class="addons-info">
+                            
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
