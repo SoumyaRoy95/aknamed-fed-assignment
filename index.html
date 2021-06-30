@@ -12,20 +12,22 @@
     <title>Login</title>
 </head>
 <body style="font-family: 'Nunito Sans';">
-   <div class="logo"></div>
-       <img src="images/rp-logo.png" alt="RedpandaLogo"/>
-   </div>
+   
+   <img src="images/rp-logo.png" alt="RedpandaLogo"/>
+   
    <div class="container">
-       <h3 color="white">WELCOME TO REDPANDA HTML - CSS BASIC FEED TEMPLATE</h3>
-       <p color="white">The RedPanda is a team of pragmatic engineers who care deeply about the quality of their products and the success of their partners. Over the years, we have mastered best practices in building software products from concept to scale and we continue to learn emerging technology</p>
+       <h2>WELCOME TO REDPANDA HTML - CSS BASIC FEED TEMPLATE</h2>
+       <p>The RedPanda is a team of pragmatic engineers who care deeply about the quality of their products and the success of their partners. Over the years, we have mastered best practices in building software products from concept to scale and we continue to learn emerging technology</p>
        <div class="form-container">
-           <h4>PLEASE LOG IN</h4>
+           <h3>PLEASE LOG IN</h3>
+           <div id="wrong-creds"><p>Please login with the correct credentials</p></div>
            <div class="form-group">
-            <label style="font-weight: bold;">Username</label>
+            <label>Username</label>
             <input type="text" name="username" placeholder="Email Or Username" id="username" />
            </div>
+           <br>
            <div class="form-group">
-            <label style="font-weight: bold;">Password</label>
+            <label>Password</label>
             <input type="password" name="password" placeholder="Password" id="password" />
            </div>           
            <div class="rememberme">
@@ -34,6 +36,7 @@
            </div>
            <button class="button" onclick="login()">Sign In</button>
        </div>
+       <br>
        <div class="copyrights">
            <p>© 2020 RedPanda. All Rights Reserved</p>
        </div>
