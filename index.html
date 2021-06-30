@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" 
     integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <link rel="stylesheet" href="./scss/main.css" />
     <script src="./js/login.js"></script>
     <title>Login</title>
 </head>
-<body>
+<body style="font-family: 'Nunito Sans';">
    <div class="logo"></div>
        <img src="images/rp-logo.png" alt="RedpandaLogo"/>
    </div>
@@ -20,19 +21,21 @@
        <div class="form-container">
            <h4>PLEASE LOG IN</h4>
            <div class="form-group">
-            <label>Username</label>
+            <label style="font-weight: bold;">Username</label>
             <input type="text" name="username" placeholder="Email Or Username" id="username" />
            </div>
            <div class="form-group">
-            <label>Password</label>
+            <label style="font-weight: bold;">Password</label>
             <input type="password" name="password" placeholder="Password" id="password" />
            </div>           
-           <div>
+           <div class="rememberme">
             <input type="checkbox" id="rememberme" name="rememberme" />
             <label for="rememberme">Remember Me</label>
            </div>
-           <br />
-           <input type="submit" value="LOG IN" onclick="login()"/>
+           <button class="button" onclick="login()">Sign In</button>
+       </div>
+       <div class="copyrights">
+           <p>© 2020 RedPanda. All Rights Reserved</p>
        </div>
    </div>
 </body>

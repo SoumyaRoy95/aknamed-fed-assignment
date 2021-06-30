@@ -17,7 +17,7 @@ header {
 
 header .logo {
   background-color: black;
-  height: 49px;
+  height: 52px;
 }
 
 header .avatar {
@@ -34,7 +34,7 @@ header .avatar {
   display: flex;
   position: relative;
   height: 100%;
-  width: 190px;
+  width: 203px;
   background-color: white;
 }
 
@@ -122,9 +122,19 @@ header .avatar {
   display: flex;
 }
 
+.all-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 2%;
+}
+
 .image-prod {
   border: 1px solid lightgray;
-  margin-right: 2%;
   margin-bottom: 2%;
 }
 
@@ -220,5 +230,92 @@ header .avatar {
 .about-seller h4 {
   color: blue;
   text-decoration: underline;
+}
+
+.addons-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+
+#infotab {
+  padding: 2%;
+  cursor: pointer;
+  border-bottom: 2px solid blue;
+}
+
+#infotab h4 {
+  color: gray;
+}
+
+#desctab {
+  padding: 2%;
+  cursor: pointer;
+}
+
+#desctab h4 {
+  color: gray;
+}
+
+.contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#infocontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#infocontent h4 {
+  margin-top: 2%;
+}
+
+#subcontent {
+  display: none;
+  margin-top: 2%;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: lightslategrey;
+  padding: 3%;
+  margin-top: 3%;
+}
+
+.footer h3 {
+  margin-bottom: 2%;
+}
+
+.footer p {
+  margin-bottom: 1%;
+}
+
+.footer .alertpop {
+  width: 10%;
+  margin-left: auto;
 }
 /*# sourceMappingURL=sproduct.css.map */

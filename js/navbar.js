@@ -9,3 +9,7 @@ function toDashboard(){
 function toCatalogue(){
     window.location.href="catalogue.html"
 }
+
+function toSproduct(){
+    window.location.href="sproduct.html"
+}

@@ -17,7 +17,7 @@ header {
 
 header .logo {
   background-color: black;
-  height: 49px;
+  height: 52px;
 }
 
 header .avatar {
@@ -34,7 +34,7 @@ header .avatar {
   display: flex;
   position: relative;
   height: 100%;
-  width: 190px;
+  width: 208px;
   background-color: white;
 }
 

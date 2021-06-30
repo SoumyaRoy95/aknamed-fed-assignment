@@ -44,7 +44,7 @@ h2 {
 
 .form-container {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,5 +70,99 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 60px;
+  margin-bottom: 3%;
+}
+
+.form-group #username {
+  padding: 2%;
+  margin: 2% 0;
+}
+
+.form-group #password {
+  padding: 2%;
+  margin: 2% 0;
+}
+
+.rememberme {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 4%;
+}
+
+.button {
+  margin-top: 4%;
+  width: 20%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+}
+
+.copyrights {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 50px 10px;
+  }
+  .container h3 {
+    text-align: center;
+  }
+  .form-container {
+    background-color: white;
+    border-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+  .form-group {
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 60px;
+    margin-bottom: 3%;
+  }
+  .form-group #username {
+    padding: 2%;
+    margin: 1% 0;
+  }
+  .form-group #password {
+    padding: 2%;
+    margin: 1% 0;
+  }
+  .button {
+    margin-top: 4%;
+    width: 30%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+  }
 }
 /*# sourceMappingURL=main.css.map */
