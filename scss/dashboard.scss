@@ -6,9 +6,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .switch{
+        display: none;
+    }
     .logo{
+        display: flex;
         background-color: black;
-        height: 52px;
+        height: 56px;
     }
     .avatar {
         vertical-align: middle;
@@ -19,24 +23,58 @@ header{
       }
 }
 
+.avatar-style{
+    padding-right: 10px;
+}
+
 .dashboard {
     display: flex;
 }
 
-#sidebar {
+.logo-label{
+    display: none;
+}
+
+.sidebar {
     display: flex;
+    flex-direction: column;
     position: relative;
     height: 100%;
-    width: 203px;
+    width: 217px;
     li {
         display: flex;
         padding: 20px;
-        width: 100%;
+        width: 82%;
         cursor: pointer;
 
         &:hover{
             background-color: aquamarine;
         }
+    }
+}
+
+.dashboard-label{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    p{
+        color: gray;
+        font-size: 16px;
+    }
+    i{
+        color: gray;
+    }
+}
+
+.catalogue-label{
+    display: flex;
+    justify-content: space-between;
+    p{
+        color: gray;
+        font-size: 16px;
+    }
+    i{
+        color: gray;
     }
 }
 
@@ -53,10 +91,6 @@ header{
         margin: 2px;
     }
     
-}
-
-#sidebar.active {
-    left: 0%;
 }
 
 .header-bar{
@@ -79,7 +113,7 @@ header{
 
 .total-profit {
     background-color: white;
-    width: 35%;
+    width: 45%;
     padding: 15px;
     border-radius: 10px;
     p {
@@ -120,7 +154,7 @@ header{
 
 .feedback{
     background-color: white;
-    width: 35%;
+    width: 45%;
     margin-left: 2%;
     border-radius: 10px;
     padding: 15px;
@@ -155,7 +189,7 @@ header{
 
 .new-profits{
     background-color: white;
-    width: 35%;
+    width: 45%;
     border-radius: 10px;
     padding: 15px;
     p {
@@ -189,7 +223,7 @@ header{
 
 .new-users{
     background-color: white;
-    width: 35%;
+    width: 45%;
     margin-left: 2%;
     border-radius: 10px;
     padding: 15px;
@@ -224,7 +258,7 @@ header{
 
 .table-group{
     background-color: white;
-    width: 74%;
+    width: 94%;
     border-radius: 10px;
     padding: 15px;
     margin-left: 5px;
@@ -262,7 +296,7 @@ header{
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
-    width: 24%;
+    width: 34%;
     padding: 2px;
     margin-right: 2%;
     align-items: center;
@@ -275,17 +309,27 @@ header{
         color: gray;
     }
     .sub-para {
+        font-size: 14px;
         font-style: italic;
         padding: 15px;
     }
 }
+
+// .pricetag{
+//     margin-left: auto;
+//     background-color: lightgreen;
+//     position: absolute;
+//     display: flex;
+//     width: 10%;
+//     justify-content: center;
+// }
 
 .teams-card {
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
-    width: 13%;
+    width: 23%;
     padding: 30px;
     margin-right: 2%;
     p {
@@ -297,7 +341,113 @@ header{
         border-bottom: 1px solid lightgray;
     }
     .sub-para{
+        font-size: 14px;
         font-style: italic;
         padding: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-color: lightgrey;
+        width: 100%;
+    }
+    header{
+        background-color: white;
+        width: 135%;
+        .switch{
+            display: flex;
+            padding-left: 2%;
+        }
+        .logo{
+            display: none;
+        }
+    }
+    .logo-label{
+        display: flex;
+        width: 100%;
+        background-color: black;
+    }
+    .avatar-style{
+        margin-left: auto;
+    }
+    
+    .sidebar{
+        display: flex;
+        background-color: white;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        transform: translateX(-217px);
+        li{
+            width: 81%;
+        }
+        
+
+    }
+    .sidebar-open {
+        .sidebar{
+            transform: translateX(0);
+        }
+        .header-bar{
+            .overlay{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    .header-bar {
+        width: 135%;
+        .overlay{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(2px);
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+    .holders {
+        flex-direction: column;
+
+    }
+    .total-profit{
+        width: 92%;
+        margin-bottom: 10px;
+    }
+    .feedback{
+        width: 92%;
+        margin-left: 0;
+    }
+    .new-profits{
+        width: 92%;
+        margin-bottom: 10px;
+    }
+    .new-users{
+        width: 92%;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    .table-group{
+        width: 90%;
+    }
+    .card{
+        width: 97%;
+        margin-bottom: 20px;
+    }
+    .referral-table{
+        margin-right: 25px;
+        .salary{
+            display: none;
+        }
+    }
+    .teams-card{
+        width: 85%;
+        margin-bottom: 20px;
     }
 }

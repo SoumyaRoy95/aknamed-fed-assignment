@@ -7,28 +7,30 @@
     <title>Dashboard</title>
     <script src="js/navbar.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./scss/dashboard.css" />
 </head>
 <body style="font-family: 'Nunito Sans';">
     <header>
+        <div class="switch" onclick="sidebar()">
+            <i class="fa fa-navicon fa-2x"></i>
+        </div>
         <img class="logo" src="./images/rp-logo.png" alt="logo">
-        <img class="avatar" src="./images/1.jpg" alt="avatar">
+        <div class="avatar-style">
+            <img class="avatar" src="./images/1.jpg" alt="avatar"><i class="fa fa-angle-down"></i>
+        </div>
     </header>
     <div class="dashboard">
-        <div id="sidebar" onclick="toggle()">
-            <div class="toggle-button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <div class="sidebar" id="sidebar">
+            <div class="logo-label"><img src="./images/rp-logo.png" alt="logo"></div>
             <ul>
-                <li style="background-color: aquamarine;">Dashboard</li>
-                <li onclick="toCatalogue()">Products Catalog</li>
+                <li class="dashboard-label"><p>Dashboard</p><i class="fa fa-home"></i></li>
+                <li class="catalogue-label" onclick="toCatalogue()"><p>Products Catalog</p><i class="fa fa-database"></i></li>
             </ul>
         </div>
         <div class="header-bar">
             <h3>PROGRESS INFORMATION</h3>
+            <i class="overlay" onclick="overlay()"></i>
             <div class="four-blocks">
                 <div class="holders">
                     <div class="total-profit">
@@ -139,7 +141,7 @@
                             <th>Age</th>
                             <th>Office</th>
                             <th>Date</th>
-                            <th>Salary</th>
+                            <th class="salary">Salary</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -149,7 +151,7 @@
                             <td>18</td>
                             <td>Littehaven</td>
                             <td>2014/06/03</td>
-                            <td>553.536</td>
+                            <td class="salary">553.536</td>
                         </tr>
                         <tr>
                             <td>Damon</td>
@@ -157,7 +159,7 @@
                             <td>18</td>
                             <td>Littehaven</td>
                             <td>2014/06/03</td>
-                            <td>553.536</td>
+                            <td class="salary">553.536</td>
                         </tr>
                         <tr>
                             <td>Damon</td>
@@ -165,7 +167,7 @@
                             <td>18</td>
                             <td>Littehaven</td>
                             <td>2014/06/03</td>
-                            <td>553.536</td>
+                            <td class="salary">553.536</td>
                         </tr>
                     </tbody>
                 </table>
@@ -174,25 +176,35 @@
             <h3>YOUR CARDS (3)</h3>
             <div class="holders">
                 <div class="card">
-                    <i class="fas fa-male"></i>
+                    <div style="padding: 25px;">
+                        <i class="fa fa-user fa-4x"></i>
+                    </div>
+                    <h2>David Beckham</h2>
+                    <!-- <div class="pricetag">
+                        $1000.00
+                    </div> -->
+                    <p>8748-XXXX-1564-3411</p>
+                    <h4>MASTERCARD</h4>
+                    <p class="sub-para">Expires at 03/22</p>
+                </div>
+                <div class="card">
+                    <div style="padding: 25px;">
+                        <i class="fa fa-user fa-4x"></i>
+                    </div>
+                    
                     <h2>David Beckham</h2>
                     <p>8748-XXXX-1564-3411</p>
                     <h4>MASTERCARD</h4>
                     <p class="sub-para">Expires at 03/22</p>
                 </div>
                 <div class="card">
-                    <i class="fas fa-male"></i>
-                    <h2>David Beckham</h2>
-                    <p>8748-XXXX-1564-3411</p>
+                    <div style="padding: 25px;">
+                        <i class="fa fa-user fa-4x"></i>
+                    </div>
+                    <h2>Mrs. Angelina Jolie</h2>
+                    <p>5423-XXXX-6786-2545</p>
                     <h4>MASTERCARD</h4>
-                    <p class="sub-para">Expires at 03/22</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-male"></i>
-                    <h2>David Beckham</h2>
-                    <p>8748-XXXX-1564-3411</p>
-                    <h4>MASTERCARD</h4>
-                    <p class="sub-para">Expires at 03/22</p>
+                    <p class="sub-para">Locked Temporarily</p>
                 </div>
             </div>
             <h3 style="margin-top: 2%;">YOUR TEAMS (4)</h3>
