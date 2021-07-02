@@ -6,35 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
     <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./scss/sproduct.css" />
     <script src="js/details.js"></script>
 </head>
 <body style="font-family: 'Nunito Sans';">
     <header>
+        <div class="switch" onclick="sidebar()">
+            <i class="fa fa-navicon fa-2x"></i>
+        </div>
         <img class="logo" src="./images/rp-logo.png" alt="logo">
         <div style="padding-right: 10px;">
             <img class="avatar" src="./images/1.jpg" alt="avatar"><i class="fa fa-angle-down"></i>
         </div>
     </header>
     <div class="container">
-        <div id="sidebar" onclick="toggle()">
-            <div class="toggle-button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <div class="sidebar" id="sidebar">
+            <div class="logo-label"><img src="./images/rp-logo.png" alt="logo"></div>
             <ul>
-                <li onclick="toDashboard()">Dashboard</li>
-                <li onclick="toCatalogue()">Products Catalog</li>
+                <li class="dashboard-label" onclick="toDashboard()"><p>Dashboard</p><i class="fa fa-home"></i></li>
+                <li class="catalogue-label" onclick="toCatalogue()"><p>Products Catalog</p><i class="fa fa-database"></i></li>
             </ul>
         </div>
         <div class="product-details">
             <div>
-                <button class="backbutton" onclick="toCatalogue()">Back</button>
+                <button class="backbutton" onclick="toCatalogue()"><i class="fa fa-arrow-left"></i>  Back</button>
             </div>
             
             <div class="details">
                 <h3>PRODUCT DETAILS</h3>
+                <i class="overlay" onclick="overlay()"></i>
                 <div class="product-image">
                     <div class="all-images">
                         <div class="image-prod">
@@ -99,7 +100,19 @@
                 <h3>REDPANDA Basic HTML - CSS Basic Template FED</h3>
                 <p>Work alongside other engineers on the team to elevate technology and consistently apply best practices. Qualifications for Software Engineer.</p>
                 <p>Our foundations are built on a carefully crafted value system which guides our way of working and justifies the quality of our product</p>
-                <button class="alertpop">Alert</button>
+                <button class="alertpop" onclick="modal_open()"><i class="fa fa-arrow-up fa-lg"></i></button>
+                <div class="modal">
+                    <div class="modal-overlay">
+                        <div class="modal-window">
+                            <div class="modal-header">
+                                <h2>KO Networks</h2>
+                                <i class="fa fa-close" onclick="modal_close()"></i>
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio laudantium sit fugiat animi iusto quae nostrum, reiciendis blanditiis in delectus qui unde fuga! Eaque laudantium nisi laborum adipisci aliquid. Sequi.</p>
+                            <button onclick="modal_close()">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

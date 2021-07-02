@@ -12,7 +12,7 @@
 </head>
 <body style="font-family: 'Nunito Sans';">
     <header>
-        <div class="switch" onclick="sidebar()">
+        <div class="switch" onclick="sidebar_products()">
             <i class="fa fa-navicon fa-2x"></i>
         </div>
         <img class="logo" src="./images/rp-logo.png" alt="logo">
@@ -21,15 +21,17 @@
         </div>
     </header>
     <div class="products-container">
-        <div class="sidebar" id="sidebar" >
+        <div class="sidebar" id="sidebar">
+            <div class="logo-label"><img src="./images/rp-logo.png" alt="logo"></div>
             <ul>
-                <li onclick="toDashboard()">Dashboard</li>
-                <li style="background-color: aquamarine;">Products Catalog</li>
+                <li class="dashboard-label" onclick="toDashboard()"><p>Dashboard</p><i class="fa fa-home"></i></li>
+                <li class="catalogue-label" ><p>Products Catalog</p><i class="fa fa-database"></i></li>
             </ul>
         </div>
         <div class="container">
             <div class="products-catalog">
                 <h3>PRODUCTS CATALOG</h3>
+                <i class="overlay" onclick="overlay_products()"></i>
                 <div class="products-row">
                     <div class="product-card" onclick="toSproduct()">
                         <img class="product-photo" src="./images//001.jpg" alt="product-photo">
@@ -37,6 +39,19 @@
                             <p>ELLIOT GLASSES</p>
                             <h3>$199.00</h3>
                         </div>
+                        <div class="prev-details">
+                            <div class="pills">
+                                <div class="pill">S</div>
+                                <div class="pill">M</div>
+                                <div class="pill">XL</div>
+                            </div>
+                            <div>
+                                <h6>$255.00</h6>
+                            </div>                           
+                        </div>
+                        <div class="last-offer">
+                            <p>Including Lenses</p>
+                        </div>  
                     </div>
                     <div class="product-card">
                         <img class="product-photo" src="./images//002.jpg" alt="product-photo">
@@ -44,12 +59,38 @@
                             <p>MAXTOR CHAIR</p>
                             <h3>$245.00</h3>
                         </div>
+                        <div class="prev-details">
+                            <div class="pills">
+                                <div class="pill">S</div>
+                                <div class="pill">M</div>
+                                <div class="pill">XL</div>
+                            </div>
+                            <div>
+                                <h6>$325.00</h6>
+                            </div>                           
+                        </div>
+                        <div class="last-offer">
+                            <p>Including Lenses</p>
+                        </div>
                     </div>
                     <div class="product-card">
                         <img class="product-photo" src="./images//003.jpg" alt="product-photo">
                         <div class="product-details">
                             <p>MANROAD GLASSES</p>
                             <h3>$300.00</h3>
+                        </div>
+                        <div class="prev-details">
+                            <div class="pills">
+                                <div class="pill">S</div>
+                                <div class="pill">M</div>
+                                <div class="pill">XL</div>
+                            </div>
+                            <div>
+                                <h6>$400.00</h6>
+                            </div>                           
+                        </div>
+                        <div class="last-offer">
+                            <p>Including Lenses</p>
                         </div>
                     </div>
                 </div>
@@ -60,6 +101,19 @@
                             <p>ALIGN GLASSES</p>
                             <h3>$199.00</h3>
                         </div>
+                        <div class="prev-details">
+                            <div class="pills">
+                                <div class="pill">S</div>
+                                <div class="pill">M</div>
+                                <div class="pill">XL</div>
+                            </div>
+                            <div>
+                                <h6>$255.00</h6>
+                            </div>                           
+                        </div>
+                        <div class="last-offer">
+                            <p>Including Lenses</p>
+                        </div>
                     </div>
                     <div class="product-card" onclick="toSproduct()">
                         <img class="product-photo" src="./images//001.jpg" alt="product-photo">
@@ -67,12 +121,38 @@
                             <p>MAXTOR CHAIR</p>
                             <h3>$245.00</h3>
                         </div>
+                        <div class="prev-details">
+                            <div class="pills">
+                                <div class="pill">S</div>
+                                <div class="pill">M</div>
+                                <div class="pill">XL</div>
+                            </div>
+                            <div>
+                                <h6>$325.00</h6>
+                            </div>                           
+                        </div>
+                        <div class="last-offer">
+                            <p>Including Lenses</p>
+                        </div>
                     </div>
                     <div class="product-card">
                         <img class="product-photo" src="./images//002.jpg" alt="product-photo">
                         <div class="product-details">
                             <p>MANROAD GLASSES</p>
                             <h3>$300.00</h3>
+                        </div>
+                        <div class="prev-details">
+                            <div class="pills">
+                                <div class="pill">S</div>
+                                <div class="pill">M</div>
+                                <div class="pill">XL</div>
+                            </div>
+                            <div>
+                                <h6>$400.00</h6>
+                            </div>                           
+                        </div>
+                        <div class="last-offer">
+                            <p>Including Lenses</p>
                         </div>
                     </div>
                 </div>
@@ -83,6 +163,19 @@
                             <p>ELLIOT GLASSES</p>
                             <h3>$199.00</h3>
                         </div>
+                        <div class="prev-details">
+                            <div class="pills">
+                                <div class="pill">S</div>
+                                <div class="pill">M</div>
+                                <div class="pill">XL</div>
+                            </div>
+                            <div>
+                                <h6>$255.00</h6>
+                            </div>                           
+                        </div>
+                        <div class="last-offer">
+                            <p>Including Lenses</p>
+                        </div>
                     </div>
                     <div class="product-card">
                         <img class="product-photo" src="./images//004.jpg" alt="product-photo">
@@ -90,12 +183,38 @@
                             <p>MAXTOR CHAIR</p>
                             <h3>$245.00</h3>
                         </div>
+                        <div class="prev-details">
+                            <div class="pills">
+                                <div class="pill">S</div>
+                                <div class="pill">M</div>
+                                <div class="pill">XL</div>
+                            </div>
+                            <div>
+                                <h6>$325.00</h6>
+                            </div>                           
+                        </div>
+                        <div class="last-offer">
+                            <p>Including Lenses</p>
+                        </div>
                     </div>
                     <div class="product-card" onclick="toSproduct()">
                         <img class="product-photo" src="./images//001.jpg" alt="product-photo">
                         <div class="product-details">
                             <p>ALIGN GLASSES</p>
                             <h3>$300.00</h3>
+                        </div>
+                        <div class="prev-details">
+                            <div class="pills">
+                                <div class="pill">S</div>
+                                <div class="pill">M</div>
+                                <div class="pill">XL</div>
+                            </div>
+                            <div>
+                                <h6>$400.00</h6>
+                            </div>                           
+                        </div>
+                        <div class="last-offer">
+                            <p>Including Lenses</p>
                         </div>
                     </div>
                 </div>

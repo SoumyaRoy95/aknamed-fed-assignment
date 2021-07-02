@@ -7,6 +7,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .switch{
+        display: none;
+    }
     .logo{
         background-color: black;
         height: 52px;
@@ -20,7 +23,11 @@ header{
       }
 }
 
-#sidebar {
+.logo-label{
+    display: none;
+}
+
+.sidebar {
     display: flex;
     position: relative;
     height: 100%;
@@ -37,6 +44,82 @@ header{
         }
     }
 }
+.dashboard-label{
+    display: flex;
+    justify-content: space-between;
+    p{
+        color: gray;
+        font-size: 16px;
+    }
+    i{
+        color: gray;
+    }
+}
+
+.catalogue-label{
+    display: flex;
+    justify-content: space-between;
+    p{
+        color: gray;
+        font-size: 16px;
+    }
+    i{
+        color: gray;
+    }
+}
+.modal-open{
+    .modal-overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(2px);
+        // visibility: hidden;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        
+    }
+    .modal-window{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 30%;
+        padding: 10px;
+        .modal-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            border-bottom: 1px solid lightgray;
+            i{
+                cursor: pointer;
+            }
+        }
+        p{
+            padding-bottom: 10px;
+            border-bottom: 1px solid lightgray;
+        }
+        button{
+            margin-left: auto;
+            margin-top: 5px;
+            padding: 10px;
+            border: 1px solid lightgray;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.modal-window{
+    display: none;
+}
+
+
 
 .toggle-button {
     position: absolute;
@@ -70,10 +153,11 @@ header{
 }
 
 .backbutton {
-    padding: 5px;
+    padding: 10px;
     color: blue;
     cursor: pointer;
     background-color: white;
+    border-radius: 10%;
     border: 1px solid white;
     margin-bottom: 15px;
 }
@@ -225,7 +309,80 @@ header{
         margin-bottom: 1%;
     }
     .alertpop {
-        width: 10%;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        background-color: gray;
         margin-left: auto;
+        border-radius: 1px solid gray;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        .switch{
+            display: flex;
+            padding-left: 2%;
+        }
+        .logo{
+            display: none;
+        }
+    }
+    .logo-label{
+        display: flex;
+        width: 100%;
+        background-color: black;
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        z-index: 2;
+        transform: translateX(-217px);
+        
+        li{
+            display: flex;
+            width: 80%;
+        }
+        
+    }
+    .product-image{
+        display: flex;
+        flex-direction: column;
+    }
+    .modal-open{
+        .modal-window{
+            position: fixed;
+            top: 0;
+            left: 10%;
+            width: 65%;
+        }
+    }
+    .details{
+        .overlay{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(2px);
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+    .sidebar-open {
+        .sidebar{
+            transform: translateX(0);
+        }
+        .details{
+            .overlay{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
     }
 }
