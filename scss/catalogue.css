@@ -164,7 +164,7 @@ header .avatar {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-  background-color: lightgray;
+  background-color: #f3f2f2;
   margin-left: 28px;
 }
 

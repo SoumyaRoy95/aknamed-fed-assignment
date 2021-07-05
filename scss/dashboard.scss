@@ -93,16 +93,19 @@ header{
     
 }
 
-.header-bar{
+.main-bar{
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
+    background-color: rgb(243, 242, 242);
     flex: 1;
     padding-top: 45px;
     padding-left: 15px;
     height: 100%;
-    h3 {
+    .main-bar-header {
+        font-size: 17px;
+        font-weight: bold;
         margin-bottom: 20px;
+        padding-left: 5px;
     }
 }
 
@@ -300,10 +303,17 @@ header{
     padding: 2px;
     margin-right: 2%;
     align-items: center;
+    i{
+        color: lightgray;
+    }
     h4 {
+        display: flex;
+        justify-content: center;
+        width: 75%;
         border-bottom: 1px solid lightgray;
         color: gray;
-        padding: 15px;
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
     p {
         color: gray;
@@ -315,14 +325,21 @@ header{
     }
 }
 
-// .pricetag{
-//     margin-left: auto;
-//     background-color: lightgreen;
-//     position: absolute;
-//     display: flex;
-//     width: 10%;
-//     justify-content: center;
-// }
+.pricetag{
+    background-color: green;
+    position: relative;
+    border-radius: 4px;
+    top: 4%;
+    left: 32%;
+    box-shadow: 0 4px 4px 0 grey;
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    p{
+        font-weight: bold ;
+        color: white;
+    }
+}
 
 .teams-card {
     display: flex;
@@ -330,20 +347,95 @@ header{
     background-color: white;
     border-radius: 10px;
     width: 23%;
-    padding: 30px;
+    padding: 12px;
     margin-right: 2%;
+    .teams-card-header{
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        padding: 15px;
+    }
     p {
         text-align: center;
         color: gray;
     }
-    .members-para {
-        padding: 10px;
-        border-bottom: 1px solid lightgray;
-    }
+    
     .sub-para{
         font-size: 14px;
         font-style: italic;
-        padding: 10px;
+        padding-bottom: 3px;
+    }
+}
+.members-para {
+    display: flex;
+    margin-left: auto;
+    width: 90%;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 15px;
+    .member-holders{
+        margin-left: auto;
+        display: flex;
+    }
+    .member-card-circle{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        p{
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+    .member-card-circle1{
+        position: relative;
+        display: flex;
+        left: 10%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        p{
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+    .member-card-circle2{
+        position: relative;
+        display: flex;
+        left: 20%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        p{
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+    .member-card-circle3{
+        position: relative;
+        display: flex;
+        left: 30%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        p{
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
     }
 }
 
@@ -354,7 +446,7 @@ header{
     }
     header{
         background-color: white;
-        width: 135%;
+        width: 100%;
         .switch{
             display: flex;
             padding-left: 2%;
@@ -390,15 +482,16 @@ header{
         .sidebar{
             transform: translateX(0);
         }
-        .header-bar{
+        .main-bar{
             .overlay{
                 visibility: visible;
                 opacity: 1;
             }
         }
     }
-    .header-bar {
-        width: 135%;
+    .main-bar {
+        width: 100%;
+        overflow-x: hidden;
         .overlay{
             position: fixed;
             top: 0;
@@ -416,37 +509,49 @@ header{
 
     }
     .total-profit{
-        width: 92%;
+        width: 88%;
         margin-bottom: 10px;
     }
     .feedback{
-        width: 92%;
+        width: 88%;
         margin-left: 0;
     }
     .new-profits{
-        width: 92%;
+        width: 88%;
         margin-bottom: 10px;
     }
     .new-users{
-        width: 92%;
+        width: 88%;
         margin-bottom: 10px;
         margin-left: 0;
     }
     .table-group{
-        width: 90%;
+        width: 85%;
     }
     .card{
         width: 97%;
         margin-bottom: 20px;
     }
     .referral-table{
-        margin-right: 25px;
+        
         .salary{
             display: none;
         }
     }
     .teams-card{
-        width: 85%;
+        width: 91%;
         margin-bottom: 20px;
+        .same-line-mv{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            p{
+                font-size: 12px;
+                padding-right: 2px;
+            }
+        }
+    }
+    .members-para{
+        padding-bottom: 10px;
     }
 }

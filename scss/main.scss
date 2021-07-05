@@ -6,19 +6,16 @@ body{
     width: 100%;
 }
 
-// .logo{
-//     margin: 10px;
-//     height: 50%;
-//     width: 50%;
-// }
 .container{
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 300px;
+    padding: 50px 270px;
 
-    h2 {
+    .login-header {
+        font-size: 32px;
+        font-weight: bold;
         color: white;
         text-align: center;
     }
@@ -26,7 +23,7 @@ body{
     p{
         color: white;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -42,10 +39,16 @@ body{
     border-radius: 15px;
     display:flex;
     flex-direction: column;
-    padding: 0 30px;
+    padding: 30px 50px;
     padding-bottom: 30px;
     margin-top: 20px;
-    width: 400px;
+    width: 420px;
+    .form-header{
+        color: black;
+        text-align: left;
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
 .form-group{
     align-items: space-around;
@@ -60,27 +63,29 @@ body{
     #username{
         padding: 3%;
         margin: 2% 0;
-        border: 1px solid lightgray;
+        border: 1px solid rgb(224, 220, 220);
         border-radius: 5px;
+        opacity: 0.6;
     }
     #password{
         padding: 3%;
         margin: 2% 0;
-        border: 1px solid lightgray;
+        border: 1px solid rgb(224, 220, 220);
         border-radius: 5px;
+        opacity: 0.6;
     }
 }
 
 .rememberme{
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(243, 236, 236);
     padding: 4% 0;
 }
 
 .button{
     margin-top: 4%;
     width: 20%;
-    padding: 10px;
-    background-color: blue;
+    padding: 14px;
+    background-color: rgb(60, 165, 235);
     border: none;
     border-radius: 5px;
     color: white;
@@ -101,6 +106,9 @@ body{
         flex-direction: column;
         justify-content: center;
         padding: 50px 15px;
+        p{
+            font-size: 14.5px;
+        }
         
     }
 
@@ -111,8 +119,9 @@ body{
         flex-direction: column;
         margin-top: 20%;
         width: 75%;
-        h3{
-            text-align: left;
+        .form-header{
+            color: black;
+            font-size: 18px;
         }
     }
     .form-group{
@@ -124,8 +133,8 @@ body{
     .button{
         margin-top: 4%;
         width: 30%;
-        padding: 10px;
-        background-color: blue;
+        padding: 14px;
+        background-color: rgb(60, 165, 235);;
         color: white;
     }
 }

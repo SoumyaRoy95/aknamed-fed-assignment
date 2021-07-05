@@ -28,8 +28,8 @@
                 <li class="catalogue-label" onclick="toCatalogue()"><p>Products Catalog</p><i class="fa fa-database"></i></li>
             </ul>
         </div>
-        <div class="header-bar">
-            <h3>PROGRESS INFORMATION</h3>
+        <div class="main-bar">
+            <p class="main-bar-header">PROGRESS INFORMATION</p>
             <i class="overlay" onclick="overlay()"></i>
             <div class="four-blocks">
                 <div class="holders">
@@ -140,7 +140,7 @@
                             <th>Position</th>
                             <th>Age</th>
                             <th>Office</th>
-                            <th>Date</th>
+                            <th class="salary">Date</th>
                             <th class="salary">Salary</th>
                         </tr>
                     </thead>
@@ -150,7 +150,7 @@
                             <td>5516, Adolfo Green</td>
                             <td>18</td>
                             <td>Littehaven</td>
-                            <td>2014/06/03</td>
+                            <td class="salary">2014/06/03</td>
                             <td class="salary">553.536</td>
                         </tr>
                         <tr>
@@ -158,7 +158,7 @@
                             <td>5516, Adolfo Green</td>
                             <td>18</td>
                             <td>Littehaven</td>
-                            <td>2014/06/03</td>
+                            <td class="salary">2014/06/03</td>
                             <td class="salary">553.536</td>
                         </tr>
                         <tr>
@@ -166,7 +166,7 @@
                             <td>5516, Adolfo Green</td>
                             <td>18</td>
                             <td>Littehaven</td>
-                            <td>2014/06/03</td>
+                            <td class="salary">2014/06/03</td>
                             <td class="salary">553.536</td>
                         </tr>
                     </tbody>
@@ -176,19 +176,23 @@
             <h3>YOUR CARDS (3)</h3>
             <div class="holders">
                 <div class="card">
-                    <div style="padding: 25px;">
+                    <div class="pricetag">
+                        <p>$1000.00</p>
+                    </div>
+                    <div style="padding-bottom: 25px;">
                         <i class="fa fa-bookmark-o fa-4x"></i>
                     </div>
                     <h2>David Beckham</h2>
-                    <!-- <div class="pricetag">
-                        $1000.00
-                    </div> -->
+                    
                     <p>8748-XXXX-1564-3411</p>
                     <h4>MASTERCARD</h4>
                     <p class="sub-para">Expires at 03/22</p>
                 </div>
                 <div class="card">
-                    <div style="padding: 25px;">
+                    <div class="pricetag">
+                        <p>$1000.00</p>
+                    </div>
+                    <div style="padding-bottom: 25px;">
                         <i class="fa fa-bookmark-o fa-4x"></i>
                     </div>
                     
@@ -198,7 +202,10 @@
                     <p class="sub-para">Expires at 03/22</p>
                 </div>
                 <div class="card">
-                    <div style="padding: 25px;">
+                    <div class="pricetag">
+                        <p>$1000.00</p>
+                    </div>
+                    <div style="padding-bottom: 25px;">
                         <i class="fa fa-user fa-4x"></i>
                     </div>
                     <h2>Mrs. Angelina Jolie</h2>
@@ -210,28 +217,93 @@
             <h3 style="margin-top: 2%;">YOUR TEAMS (4)</h3>
             <div class="holders">
                 <div class="teams-card">
-                    <h3>Team 1</h3>
-                    <p class="members-para">Members</p>
-                    <p class="sub-para">Currently not charged:</p>
-                    <p class="sub-para">$12,500.00</p>
+                    <p class="teams-card-header">Team 1</p>
+                    <div class="members-para">
+                        <div class="member-holders">
+                            <div class="member-card-circle3" style="background-color: orchid;">
+                                <p>CAL</p>
+                            </div>
+                            <div class="member-card-circle2" style="background-color: orange;">
+                                <p>MD</p>
+                            </div>
+                            <div class="member-card-circle1" style="background-color: lightseagreen;">
+                                <p>KO2</p>
+                            </div>
+                            <div class="member-card-circle" style="background-color: lightskyblue;">
+                                <p>KO1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="same-line-mv">
+                        <p class="sub-para">Currently not charged: </p>
+                        <p class="sub-para"> $12,500.00</p>
+                    </div>
                 </div>
                 <div class="teams-card">
-                    <h3>Team 1</h3>
-                    <p class="members-para">Members</p>
-                    <p class="sub-para">Currently not charged:</p>
-                    <p class="sub-para">$15,000.00</p>
+                    <p class="teams-card-header">Team 2</p>
+                    <div class="members-para">
+                        <div class="member-holders">
+                            <div class="member-card-circle2" style="background-color: orange;">
+                                <p>MD</p>
+                            </div>
+                            <div class="member-card-circle1" style="background-color: lightskyblue;">
+                                <p>KO2</p>
+                            </div>
+                            <div class="member-card-circle" style="background-color: lightseagreen;">
+                                <p>KO1</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="same-line-mv">
+                        <p class="sub-para">Currently not charged: </p>
+                        <p class="sub-para">$15,000.00</p>
+                    </div>
+                    
                 </div>
                 <div class="teams-card">
-                    <h3>Team 1</h3>
-                    <p class="members-para">Members</p>
-                    <p class="sub-para">Currently not charged:</p>
-                    <p class="sub-para">$12,500.00</p>
+                    <p class="teams-card-header">Team 3</p>
+                    <div class="members-para">
+                        <div class="member-holders">
+                            <div class="member-card-circle1" style="background-color: orchid;">
+                                <p>KO2</p>
+                            </div>
+                            <div class="member-card-circle" style="background-color: lightseagreen;">
+                                <p>KO1</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="same-line-mv">
+                        <p class="sub-para">Currently not charged: </p>
+                        <p class="sub-para">$12,500.00</p>
+                    </div>
+                    
                 </div>
                 <div class="teams-card">
-                    <h3>Team 1</h3>
-                    <p class="members-para">Members</p>
-                    <p class="sub-para">Currently not charged:</p>
-                    <p class="sub-para">$10,200.00</p>
+                    <p class="teams-card-header">Team 4</p>
+                    <div class="members-para">
+                        <div class="member-holders">
+                            <div class="member-card-circle3" style="background-color: orchid;">
+                                <p>CAL</p>
+                            </div>
+                            <div class="member-card-circle2" style="background-color: orange;">
+                                <p>MD</p>
+                            </div>
+                            <div class="member-card-circle1" style="background-color: lightseagreen;">
+                                <p>KO2</p>
+                            </div>
+                            <div class="member-card-circle" style="background-color: lightskyblue;">
+                                <p>KO1</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="same-line-mv">
+                        <p class="sub-para">Currently not charged: </p>
+                        <p class="sub-para">$10,200.00</p>
+                    </div>
+                    
                 </div>
             </div>
         </div>

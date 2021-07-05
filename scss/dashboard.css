@@ -127,7 +127,7 @@ header .avatar {
   margin: 2px;
 }
 
-.header-bar {
+.main-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +135,7 @@ header .avatar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: lightgray;
+  background-color: #f3f2f2;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -144,8 +144,11 @@ header .avatar {
   height: 100%;
 }
 
-.header-bar h3 {
+.main-bar .main-bar-header {
+  font-size: 17px;
+  font-weight: bold;
   margin-bottom: 20px;
+  padding-left: 5px;
 }
 
 .holders {
@@ -386,10 +389,22 @@ header .avatar {
           align-items: center;
 }
 
+.card i {
+  color: lightgray;
+}
+
 .card h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 75%;
   border-bottom: 1px solid lightgray;
   color: gray;
-  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .card p {
@@ -400,6 +415,28 @@ header .avatar {
   font-size: 14px;
   font-style: italic;
   padding: 15px;
+}
+
+.pricetag {
+  background-color: green;
+  position: relative;
+  border-radius: 4px;
+  top: 4%;
+  left: 32%;
+  -webkit-box-shadow: 0 4px 4px 0 grey;
+          box-shadow: 0 4px 4px 0 grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pricetag p {
+  font-weight: bold;
+  color: white;
 }
 
 .teams-card {
@@ -413,8 +450,16 @@ header .avatar {
   background-color: white;
   border-radius: 10px;
   width: 23%;
-  padding: 30px;
+  padding: 12px;
   margin-right: 2%;
+}
+
+.teams-card .teams-card-header {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding: 15px;
 }
 
 .teams-card p {
@@ -422,15 +467,119 @@ header .avatar {
   color: gray;
 }
 
-.teams-card .members-para {
-  padding: 10px;
-  border-bottom: 1px solid lightgray;
-}
-
 .teams-card .sub-para {
   font-size: 14px;
   font-style: italic;
+  padding-bottom: 3px;
+}
+
+.members-para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  width: 90%;
   padding: 10px;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 15px;
+}
+
+.members-para .member-holders {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.members-para .member-card-circle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.members-para .member-card-circle p {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.members-para .member-card-circle1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.members-para .member-card-circle1 p {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.members-para .member-card-circle2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.members-para .member-card-circle2 p {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.members-para .member-card-circle3 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.members-para .member-card-circle3 p {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -440,7 +589,7 @@ header .avatar {
   }
   header {
     background-color: white;
-    width: 135%;
+    width: 100%;
   }
   header .switch {
     display: -webkit-box;
@@ -480,14 +629,15 @@ header .avatar {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  .sidebar-open .header-bar .overlay {
+  .sidebar-open .main-bar .overlay {
     visibility: visible;
     opacity: 1;
   }
-  .header-bar {
-    width: 135%;
+  .main-bar {
+    width: 100%;
+    overflow-x: hidden;
   }
-  .header-bar .overlay {
+  .main-bar .overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -506,38 +656,54 @@ header .avatar {
             flex-direction: column;
   }
   .total-profit {
-    width: 92%;
+    width: 88%;
     margin-bottom: 10px;
   }
   .feedback {
-    width: 92%;
+    width: 88%;
     margin-left: 0;
   }
   .new-profits {
-    width: 92%;
+    width: 88%;
     margin-bottom: 10px;
   }
   .new-users {
-    width: 92%;
+    width: 88%;
     margin-bottom: 10px;
     margin-left: 0;
   }
   .table-group {
-    width: 90%;
+    width: 85%;
   }
   .card {
     width: 97%;
     margin-bottom: 20px;
   }
-  .referral-table {
-    margin-right: 25px;
-  }
   .referral-table .salary {
     display: none;
   }
   .teams-card {
-    width: 85%;
+    width: 91%;
     margin-bottom: 20px;
+  }
+  .teams-card .same-line-mv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .teams-card .same-line-mv p {
+    font-size: 12px;
+    padding-right: 2px;
+  }
+  .members-para {
+    padding-bottom: 10px;
   }
 }
 /*# sourceMappingURL=dashboard.css.map */
