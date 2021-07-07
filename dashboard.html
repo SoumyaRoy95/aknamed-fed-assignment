@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <script src="js/navbar.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./scss/dashboard.css" />
 </head>
-<body style="font-family: 'Nunito Sans';">
+<body>
     <header>
         <div class="switch" onclick="sidebar()">
             <i class="fa fa-navicon fa-2x"></i>
@@ -25,22 +27,23 @@
             <div class="logo-label"><img src="./images/rp-logo.png" alt="logo"></div>
             <ul>
                 <li class="dashboard-label"><p>Dashboard</p><i class="fa fa-home"></i></li>
-                <li class="catalogue-label" onclick="toCatalogue()"><p>Products Catalog</p><i class="fa fa-database"></i></li>
+                <hr>
+                <li onclick="toCatalogue()"><p>Products Catalog</p><i class="fa fa-database"></i></li>
             </ul>
         </div>
         <div class="main-bar">
-            <p class="main-bar-header">PROGRESS INFORMATION</p>
+            <p class="main-bar-header">progress information</p>
             <i class="overlay" onclick="overlay()"></i>
             <div class="four-blocks">
                 <div class="holders">
                     <div class="total-profit">
                         <div class="info">
                             <div>
-                                <h3>Total Profit</h3>                   
+                                <p class="info-profit">Total Profit</p>                   
                                 <p>Profit</p>
                             </div>                  
                             <div>
-                                <h2>$18M</h2>
+                                <p class="value">$18M</p>
                             </div>
                         </div>               
                         <div class="progress">
@@ -59,11 +62,11 @@
                     <div class="feedback">
                         <div class="info1">
                             <div>
-                                <h3>Feedback</h3>                   
+                                <p class="info-feedback">Feedback</p>                   
                                 <p>Customer Review</p>
                             </div>                  
                             <div>
-                                <h2>134</h2>
+                                <p class="value">134</p>
                             </div>
                         </div>  
                         <div class="progress-feedback">
@@ -84,11 +87,11 @@
                     <div class="new-profits">
                         <div class="new-info">
                             <div>
-                                <h3>New Orders</h3>                   
+                                <p class="info-new-orders">New Orders</p>                   
                                 <p>Orders Progress</p>
                             </div>                  
                             <div>
-                                <h2>160</h2>
+                                <p class="value">160</p>
                             </div>
                         </div> 
                         <div class="progress-newinfo">
@@ -107,11 +110,11 @@
                     <div class="new-users">
                         <div class="new-userinfo">
                             <div>
-                                <h3>New Users</h3>                   
+                                <p class="info-new-users">New Users</p>                   
                                 <p>Joined Users</p>
                             </div>                  
                             <div>
-                                <h2>160</h2>
+                                <p class="value">160</p>
                             </div>
                         </div> 
                         <div class="progress-newuserinfo">
@@ -131,7 +134,7 @@
             </div>
             
             <div class="table-group">
-                <h3>RECENTLY REFERRALS</h3>
+                <p class="table-title">RECENTLY REFERRALS</p>
                 <p>Blocks with Recently Referrals information</p>
                 <table class="referral-table">
                     <thead>
@@ -173,7 +176,7 @@
                 </table>
             </div>
     
-            <h3>YOUR CARDS (3)</h3>
+            <p class="main-bar-header">YOUR CARDS (3)</p>
             <div class="holders">
                 <div class="card">
                     <div class="pricetag">
@@ -182,10 +185,10 @@
                     <div style="padding-bottom: 25px;">
                         <i class="fa fa-bookmark-o fa-4x"></i>
                     </div>
-                    <h2>David Beckham</h2>
+                    <p class="card-owner">David Beckham</p>
                     
                     <p>8748-XXXX-1564-3411</p>
-                    <h4>MASTERCARD</h4>
+                    <p class="mastercard">MASTERCARD</p>
                     <p class="sub-para">Expires at 03/22</p>
                 </div>
                 <div class="card">
@@ -196,9 +199,9 @@
                         <i class="fa fa-bookmark-o fa-4x"></i>
                     </div>
                     
-                    <h2>David Beckham</h2>
+                    <p class="card-owner">David Beckham</p>
                     <p>8748-XXXX-1564-3411</p>
-                    <h4>MASTERCARD</h4>
+                    <p class="mastercard">MASTERCARD</p>
                     <p class="sub-para">Expires at 03/22</p>
                 </div>
                 <div class="card">
@@ -206,15 +209,15 @@
                         <p>$1000.00</p>
                     </div>
                     <div style="padding-bottom: 25px;">
-                        <i class="fa fa-user fa-4x"></i>
+                        <i class="fa fa-hourglass-3 fa-4x"></i>
                     </div>
-                    <h2>Mrs. Angelina Jolie</h2>
+                    <p class="card-owner">Mrs. Angelina Jolie</p>
                     <p>5423-XXXX-6786-2545</p>
-                    <h4>MASTERCARD</h4>
+                    <p class="mastercard">MASTERCARD</p>
                     <p class="sub-para">Locked Temporarily</p>
                 </div>
             </div>
-            <h3 style="margin-top: 2%;">YOUR TEAMS (4)</h3>
+            <p class="main-bar-header" style="margin-top: 2%;">YOUR TEAMS (4)</p>
             <div class="holders">
                 <div class="teams-card">
                     <p class="teams-card-header">Team 1</p>

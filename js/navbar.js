@@ -31,4 +31,11 @@ function overlay_products(){
 }
         
 
+function logout(){
+    const container = document.querySelector('.container');
+    container.classList.toggle("logout-open")
+}
 
+function signout(){
+    window.location.href="index.html"
+}

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Nunito Sans';
 }
 
 header {
@@ -62,54 +63,47 @@ header .avatar {
   width: 217px;
 }
 
+.sidebar ul {
+  padding-top: 10px;
+}
+
 .sidebar li {
+  padding: 10px 20px;
+  width: 82%;
+  cursor: pointer;
+  margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px;
-  width: 82%;
-  cursor: pointer;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+
+.sidebar li p {
+  color: gray;
+  font-size: 14px;
+}
+
+.sidebar li i {
+  color: gray;
 }
 
 .sidebar li:hover {
-  background-color: aquamarine;
+  background: -webkit-gradient(linear, right top, left top, color-stop(98%, #ccecf7), color-stop(2%, #0283b6));
+  background: linear-gradient(to left, #ccecf7 98%, #0283b6 2%);
+}
+
+.sidebar hr {
+  color: lightgrey;
+  margin-left: 10px;
+  width: 90%;
 }
 
 .dashboard-label {
-  background-color: aquamarine;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.dashboard-label p {
-  color: gray;
-  font-size: 16px;
-}
-
-.dashboard-label i {
-  color: gray;
-}
-
-.catalogue-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.catalogue-label p {
-  color: gray;
-  font-size: 16px;
-}
-
-.catalogue-label i {
-  color: gray;
+  background: -webkit-gradient(linear, right top, left top, color-stop(98%, #ccecf7), color-stop(2%, #0283b6));
+  background: linear-gradient(to left, #ccecf7 98%, #0283b6 2%);
 }
 
 .toggle-button {
@@ -139,7 +133,7 @@ header .avatar {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-top: 45px;
+  padding-top: 10px;
   padding-left: 15px;
   height: 100%;
 }
@@ -147,8 +141,8 @@ header .avatar {
 .main-bar .main-bar-header {
   font-size: 17px;
   font-weight: bold;
-  margin-bottom: 20px;
-  padding-left: 5px;
+  padding: 20px 5px;
+  text-transform: uppercase;
 }
 
 .holders {
@@ -166,6 +160,7 @@ header .avatar {
 }
 
 .total-profit p {
+  font-size: 13px;
   margin-top: 2px;
   color: gray;
   margin-bottom: 15px;
@@ -180,7 +175,16 @@ header .avatar {
           justify-content: space-between;
 }
 
-.info h2 {
+.info .info-profit {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.info .value {
+  font-size: 23px;
+  font-weight: bold;
   color: blue;
 }
 
@@ -217,6 +221,7 @@ header .avatar {
 }
 
 .feedback p {
+  font-size: 13px;
   margin-top: 2px;
   color: gray;
   margin-bottom: 15px;
@@ -231,7 +236,16 @@ header .avatar {
           justify-content: space-between;
 }
 
-.info1 h2 {
+.info1 .info-feedback {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.info1 .value {
+  font-size: 23px;
+  font-weight: bold;
   color: green;
 }
 
@@ -257,6 +271,7 @@ header .avatar {
 }
 
 .new-profits p {
+  font-size: 13px;
   margin-top: 2px;
   color: gray;
   margin-bottom: 15px;
@@ -271,7 +286,16 @@ header .avatar {
           justify-content: space-between;
 }
 
-.new-info h2 {
+.new-info .info-new-orders {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.new-info .value {
+  font-size: 23px;
+  font-weight: bold;
   color: red;
 }
 
@@ -297,7 +321,15 @@ header .avatar {
   padding: 15px;
 }
 
+.new-users .info-new-users {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 .new-users p {
+  font-size: 13px;
   margin-top: 2px;
   color: gray;
   margin-bottom: 15px;
@@ -312,7 +344,9 @@ header .avatar {
           justify-content: space-between;
 }
 
-.new-userinfo h2 {
+.new-userinfo .value {
+  font-size: 23px;
+  font-weight: bold;
   color: gray;
 }
 
@@ -340,7 +374,15 @@ header .avatar {
   margin-bottom: 2%;
 }
 
+.table-group .table-title {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 .table-group p {
+  font-size: 13px;
   margin-top: 2px;
   color: gray;
   margin-bottom: 15px;
@@ -393,7 +435,13 @@ header .avatar {
   color: lightgray;
 }
 
-.card h4 {
+.card .card-owner {
+  color: #000;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.card .mastercard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,23 +450,25 @@ header .avatar {
           justify-content: center;
   width: 75%;
   border-bottom: 1px solid lightgray;
+  font-weight: bold;
   color: gray;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
 .card p {
+  font-size: 16px;
   color: gray;
 }
 
 .card .sub-para {
-  font-size: 14px;
+  font-size: 12px;
   font-style: italic;
   padding: 15px;
 }
 
 .pricetag {
-  background-color: green;
+  background-color: #40ac40;
   position: relative;
   border-radius: 4px;
   top: 4%;
@@ -435,6 +485,7 @@ header .avatar {
 }
 
 .pricetag p {
+  font-size: 18px;
   font-weight: bold;
   color: white;
 }
@@ -456,7 +507,7 @@ header .avatar {
 
 .teams-card .teams-card-header {
   color: black;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: bold;
   text-align: left;
   padding: 15px;
@@ -649,6 +700,11 @@ header .avatar {
     visibility: hidden;
     opacity: 0;
   }
+  .main-bar .main-bar-header {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 5px;
+  }
   .holders {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -659,31 +715,73 @@ header .avatar {
     width: 88%;
     margin-bottom: 10px;
   }
+  .total-profit .info-profit {
+    font-size: 14px;
+  }
+  .total-profit .value {
+    font-size: 21px;
+  }
   .feedback {
     width: 88%;
     margin-left: 0;
   }
+  .feedback .info-feedback {
+    font-size: 14px;
+  }
+  .feedback .value {
+    font-size: 21px;
+  }
   .new-profits {
     width: 88%;
     margin-bottom: 10px;
+  }
+  .new-profits .info-new-orders {
+    font-size: 14px;
+  }
+  .new-profits .value {
+    font-size: 21px;
   }
   .new-users {
     width: 88%;
     margin-bottom: 10px;
     margin-left: 0;
   }
+  .new-users .info-new-users {
+    font-size: 14px;
+  }
+  .new-users .value {
+    font-size: 21px;
+  }
   .table-group {
     width: 85%;
   }
+  .table-group .table-title {
+    font-size: 14px;
+  }
   .card {
-    width: 97%;
+    width: 95%;
     margin-bottom: 20px;
+  }
+  .card .card-owner {
+    font-size: 19px;
+  }
+  .card p {
+    font-size: 14px;
   }
   .referral-table .salary {
     display: none;
   }
+  .pricetag {
+    position: relative;
+    top: 10px;
+    left: -29%;
+    width: 37%;
+  }
+  .pricetag p {
+    font-size: 16px;
+  }
   .teams-card {
-    width: 91%;
+    width: 89%;
     margin-bottom: 20px;
   }
   .teams-card .same-line-mv {
@@ -701,6 +799,9 @@ header .avatar {
   .teams-card .same-line-mv p {
     font-size: 12px;
     padding-right: 2px;
+  }
+  .teams-card .teams-card-header {
+    font-size: 19px;
   }
   .members-para {
     padding-bottom: 10px;

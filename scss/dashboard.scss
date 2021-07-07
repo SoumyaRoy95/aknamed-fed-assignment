@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Nunito Sans';
 }
 header{
     display: flex;
@@ -41,42 +42,40 @@ header{
     position: relative;
     height: 100%;
     width: 217px;
+    ul{
+        padding-top: 10px;
+    }
     li {
-        display: flex;
-        padding: 20px;
+        padding: 10px 20px;
         width: 82%;
         cursor: pointer;
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        p{
+            color: gray;
+            font-size: 14px;
+        }
+        i{
+            color: gray;
+        }
 
         &:hover{
-            background-color: aquamarine;
+            background: linear-gradient(to left, rgb(204, 236, 247) 98%, rgb(2, 131, 182) 2%)
         }
+    }
+    hr {
+        color: lightgrey;
+        margin-left: 10px;
+        width: 90%;
     }
 }
 
 .dashboard-label{
-    background-color: aquamarine;
-    display: flex;
-    justify-content: space-between;
-    p{
-        color: gray;
-        font-size: 16px;
-    }
-    i{
-        color: gray;
-    }
+    background: linear-gradient(to left, rgb(204, 236, 247) 98%, rgb(2, 131, 182) 2%);
 }
 
-.catalogue-label{
-    display: flex;
-    justify-content: space-between;
-    p{
-        color: gray;
-        font-size: 16px;
-    }
-    i{
-        color: gray;
-    }
-}
 
 .toggle-button {
     position: absolute;
@@ -98,14 +97,14 @@ header{
     flex-direction: column;
     background-color: rgb(243, 242, 242);
     flex: 1;
-    padding-top: 45px;
+    padding-top: 10px;
     padding-left: 15px;
     height: 100%;
     .main-bar-header {
         font-size: 17px;
         font-weight: bold;
-        margin-bottom: 20px;
-        padding-left: 5px;
+        padding: 20px 5px;
+        text-transform: uppercase;
     }
 }
 
@@ -120,6 +119,7 @@ header{
     padding: 15px;
     border-radius: 10px;
     p {
+        font-size: 13px;
         margin-top: 2px;
         color: gray;
         margin-bottom: 15px;
@@ -130,8 +130,16 @@ header{
 .info {
     display: flex;
     justify-content: space-between;
+    .info-profit {
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
 
-    h2 {
+    .value {
+        font-size: 23px;
+        font-weight: bold;
         color: blue;
     }
 }
@@ -162,6 +170,7 @@ header{
     border-radius: 10px;
     padding: 15px;
     p {
+        font-size: 13px;
         margin-top: 2px;
         color: gray;
         margin-bottom: 15px;
@@ -171,8 +180,15 @@ header{
 .info1 {
     display: flex;
     justify-content: space-between;
-
-    h2 {
+    .info-feedback {
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .value {
+        font-size: 23px;
+        font-weight: bold;
         color: green;
     }
 }
@@ -196,6 +212,7 @@ header{
     border-radius: 10px;
     padding: 15px;
     p {
+        font-size: 13px;
         margin-top: 2px;
         color: gray;
         margin-bottom: 15px;
@@ -205,8 +222,15 @@ header{
 .new-info {
     display: flex;
     justify-content: space-between;
-
-    h2 {
+    .info-new-orders{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .value {
+        font-size: 23px;
+        font-weight: bold;
         color: red;
     }
 }
@@ -230,7 +254,14 @@ header{
     margin-left: 2%;
     border-radius: 10px;
     padding: 15px;
+    .info-new-users{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
     p {
+        font-size: 13px;
         margin-top: 2px;
         color: gray;
         margin-bottom: 15px;
@@ -241,7 +272,9 @@ header{
     display: flex;
     justify-content: space-between;
 
-    h2 {
+    .value {
+        font-size: 23px;
+        font-weight: bold;
         color: gray;
     }
 }
@@ -267,7 +300,14 @@ header{
     margin-left: 5px;
     margin-top: 2%;
     margin-bottom: 2%;
+    .table-title{
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
     p {
+        font-size: 13px;
         margin-top: 2px;
         color: gray;
         margin-bottom: 15px;
@@ -306,27 +346,34 @@ header{
     i{
         color: lightgray;
     }
-    h4 {
+    .card-owner{
+        color: #000;
+        font-size: 21px;
+        font-weight: bold;
+    }
+    .mastercard {
         display: flex;
         justify-content: center;
         width: 75%;
         border-bottom: 1px solid lightgray;
+        font-weight: bold;
         color: gray;
         padding-top: 20px;
         padding-bottom: 10px;
     }
     p {
+        font-size: 16px;
         color: gray;
     }
     .sub-para {
-        font-size: 14px;
+        font-size: 12px;
         font-style: italic;
         padding: 15px;
     }
 }
 
 .pricetag{
-    background-color: green;
+    background-color: rgb(64, 172, 64);
     position: relative;
     border-radius: 4px;
     top: 4%;
@@ -336,6 +383,7 @@ header{
     width: 40%;
     justify-content: center;
     p{
+        font-size: 18px;
         font-weight: bold ;
         color: white;
     }
@@ -351,7 +399,7 @@ header{
     margin-right: 2%;
     .teams-card-header{
         color: black;
-        font-size: 20px;
+        font-size: 21px;
         font-weight: bold;
         text-align: left;
         padding: 15px;
@@ -503,6 +551,11 @@ header{
             visibility: hidden;
             opacity: 0;
         }
+        .main-bar-header {
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 5px;
+        }
     }
     .holders {
         flex-direction: column;
@@ -511,26 +564,59 @@ header{
     .total-profit{
         width: 88%;
         margin-bottom: 10px;
+        .info-profit{
+            font-size: 14px;
+        }
+        .value{
+            font-size: 21px;
+        }
     }
     .feedback{
         width: 88%;
         margin-left: 0;
+        .info-feedback{
+            font-size: 14px;
+        }
+        .value{
+            font-size: 21px;
+        }
     }
     .new-profits{
         width: 88%;
         margin-bottom: 10px;
+        .info-new-orders{
+            font-size: 14px;
+        }
+        .value{
+            font-size: 21px;
+        }
     }
     .new-users{
         width: 88%;
         margin-bottom: 10px;
         margin-left: 0;
+        .info-new-users{
+            font-size: 14px;
+        }
+        .value{
+            font-size: 21px;
+        }
     }
     .table-group{
         width: 85%;
+        .table-title{
+            font-size: 14px;
+        }
     }
     .card{
-        width: 97%;
+        width: 95%;
         margin-bottom: 20px;
+        .card-owner{
+            font-size: 19px;
+        }
+        p{
+            font-size: 14px;
+        }
     }
     .referral-table{
         
@@ -538,8 +624,18 @@ header{
             display: none;
         }
     }
+
+    .pricetag{
+        position: relative;
+        top: 10px;
+        left: -29%;
+        width: 37%;
+        p{
+            font-size: 16px;
+        }
+    }
     .teams-card{
-        width: 91%;
+        width: 89%;
         margin-bottom: 20px;
         .same-line-mv{
             display: flex;
@@ -549,6 +645,9 @@ header{
                 font-size: 12px;
                 padding-right: 2px;
             }
+        }
+        .teams-card-header{
+            font-size: 19px;
         }
     }
     .members-para{

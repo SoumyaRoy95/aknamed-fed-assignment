@@ -1,7 +1,36 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Nunito Sans';
 }
+
+.logout{
+    cursor: pointer;
+    display: flex;
+    background-color: white;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 3px 2px lightgrey;
+    padding: 10px;
+    width: 90px;
+    position: absolute;
+    right: 1%;
+    opacity: 0;
+    i{
+        color: lightgrey;
+    }
+    p{
+        color: lightgrey;
+        font-size: 12px;
+        padding-left: 5px;
+    }
+}
+
+.logout-open {
+    .logout{
+        opacity: 1;
+    }
+}
+
 header{
     display: flex;
     align-items: center;
@@ -23,37 +52,23 @@ header{
       
 }
 
+.catalog-header{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
 
 .logo-label{
     display: none;
 }
 
-.dashboard-label{
-    display: flex;
-    justify-content: space-between;
-    p{
-        color: gray;
-        font-size: 16px;
-    }
-    i{
-        color: gray;
-    }
-}
-
 .catalogue-label{
-    display: flex;
-    background-color: aquamarine;
-    justify-content: space-between;
-    p{
-        color: gray;
-        font-size: 16px;
-    }
-    i{
-        color: gray;
-    }
+    background: linear-gradient(to left, rgb(204, 236, 247) 98%, rgb(2, 131, 182) 2%);
 }
 
 .avatar-style{
+    cursor: pointer;
     padding-right: 10px;
 }
 
@@ -63,15 +78,32 @@ header{
     height: 100%;
     width: 228px;
     background-color: white;
+    ul{
+        padding-top: 10px;
+    }
     li {
-        display: flex;
-        padding: 20px;
-        width: 100%;
+        padding: 10px 20px;
+        width: 110%;
         cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        p{
+            color: gray;
+            font-size: 14px;
+        }
+        i{
+            color: gray;
+        }
 
         &:hover{
-            background-color: aquamarine;
+            background: linear-gradient(to left, rgb(204, 236, 247) 98%, rgb(2, 131, 182) 2%);
         }
+    }
+    hr {
+        color: lightgrey;
+        margin-left: 10px;
+        width: 120%;
     }
 }
 
@@ -96,7 +128,8 @@ header{
     width: 85%;
     padding: 0 2px;
     margin-bottom: 5px;
-    h6 {
+    .prev-price {
+        font-size: 16px;
         margin-top: 3px;
         color: lightgrey;
         text-align: end;
@@ -107,6 +140,7 @@ header{
 
 .last-offer{
     width: 85%;
+    margin-bottom: 10px;
     p{
         font-size: 12px;
         font-style: italic;
@@ -144,30 +178,74 @@ header{
     flex-direction: column;
     align-items: center;
     border: 1px solid lightgray;
-    width: 23%;
+    border-radius: 5px;
+    width: 31%;
     margin-right: 2%;
+
+    .arrow-up {
+        position: relative;
+        top: 0;
+        left: -40%;
+        margin: 10px;
+        width: 0; 
+        height: 0; 
+        border-right: 45px solid transparent;
+        
+        border-top: 45px solid red;
+        span{
+            position:relative;
+            top: -28px;
+            left: 10px;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            transform: rotate(-45deg);
+            display:block;
+        }
+      }
+      .hidden-arrow-up {
+        position: relative;
+        top: 0;
+        left: -40%;
+        margin: 10px;
+        width: 0; 
+        height: 0; 
+        border-right: 45px solid transparent;
+        visibility: hidden;
+        border-top: 45px solid red;
+        span{
+            position:relative;
+            top: -28px;
+            left: 10px;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            transform: rotate(-45deg);
+            display:block;
+        }
+      }
     
     .product-photo{
-        width: 200px;
-        height: 220px;
+        width: 250px;
+        height: 250px;
         border-bottom: 1px solid lightgray;
     }
     .product-details {
         display: flex;
         width: 100%;
         justify-content: space-around;
-        padding: 10px 2px;
+        margin-top: 10px;
+        padding: 0 2px;
         p{
-            font-size: 12px;
+            font-size: 16px;
             font-weight: bold;
             color: gray;
         }
-    }
-    p{
-        font-size: 12px;
-        font-style: italic;
-        text-align: left;
-        padding-bottom: 5px;
+        .price{
+            color: black;
+            font-size: 26px;
+            font-weight: bold;
+        }
     }
 }
 
@@ -180,6 +258,9 @@ header{
         .logo{
             display: none;
         }
+    }
+    .catalog-header{
+        font-size: 15px;
     }
     .logo-label{
         display: flex;
@@ -204,6 +285,10 @@ header{
                 background-color: aquamarine;
             }
         }
+
+        hr {
+            width: 90%;
+        }
         
     }
     .sidebar-open {
@@ -218,7 +303,7 @@ header{
         }
     }
     .products-container{
-        background-color: lightgrey;
+        background-color: rgb(243, 242, 242);
         padding: 2%;
     }
     .products-row{
@@ -229,12 +314,20 @@ header{
         width: 100%;
         margin-bottom: 10px;
         margin-right: 10px ;
+        .product-details {
+            p{
+                font-size: 14px;
+            }
+            .price{
+                font-size: 24px;
+            }
+        }
     }
     .prev-details{
-        width: 75%;
+        width: 85%;
     }
     .last-offer{
-        width: 75%;
+        width: 85%;
     }
     .container{
         left: 0;
@@ -255,5 +348,6 @@ header{
             opacity: 0;
         }
     }
+    
  }
 

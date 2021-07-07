@@ -5,27 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
-    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./scss/sproduct.css" />
     <script src="js/details.js"></script>
 </head>
-<body style="font-family: 'Nunito Sans';">
+<body>
     <header>
         <div class="switch" onclick="sidebar()">
             <i class="fa fa-navicon fa-2x"></i>
         </div>
         <img class="logo" src="./images/rp-logo.png" alt="logo">
-        <div style="padding-right: 10px;">
+        <div class="profile-icon" onclick="logout()">
             <img class="avatar" src="./images/1.jpg" alt="avatar"><i class="fa fa-angle-down"></i>
         </div>
     </header>
+    
     <div class="container">
+        <div class="logout" onclick="signout()">
+            <i class="fa fa-sign-out"></i><p>Logout</p>
+        </div>
         <div class="sidebar" id="sidebar">
             <div class="logo-label"><img src="./images/rp-logo.png" alt="logo"></div>
             <ul>
-                <li class="dashboard-label" onclick="toDashboard()"><p>Dashboard</p><i class="fa fa-home"></i></li>
-                <li class="catalogue-label" onclick="toCatalogue()"><p>Products Catalog</p><i class="fa fa-database"></i></li>
+                <li onclick="toDashboard()"><p>Dashboard</p><i class="fa fa-home"></i></li>
+                <hr>
+                <li onclick="toCatalogue()"><p>Products Catalog</p><i class="fa fa-database"></i></li>
             </ul>
         </div>
         <div class="product-details">
@@ -34,22 +41,50 @@
             </div>
             
             <div class="details">
-                <h3>PRODUCT DETAILS</h3>
+                <p class="details-header">product details</p>
                 <i class="overlay" onclick="overlay()"></i>
                 <div class="product-image">
                     <div class="all-images">
                         <div class="image-prod">
+                            <div class="arrow-up"><span>new</span></div>
                             <img src="./images/001.jpg" alt="img-prod">
+                        </div>
+                        <div class="sub-images">
+                            <img src="./images/002.jpg" alt="sub-img1" class="sub-img1">
+                            <img src="./images/004.jpg" alt="sub-img1" class="sub-img1">
+                            <img src="./images/003.jpg" alt="sub-img1" class="sub-img1">
+                        </div>
+                        <div class="sub-images">
+                            <img src="./images/002.jpg" alt="sub-img1" class="sub-img1">
+                            <img src="./images/004.jpg" alt="sub-img1" class="sub-img1">
+                            <img src="./images/003.jpg" alt="sub-img1" class="sub-img1">
                         </div>
                     </div>
                     
                     
-                    <div class="specificatios">
-                        <h1>Beautiful Chair for Kids</h1>
+                    <div class="specifications">
+                        <div class="clip-tags">
+                            <div class="mobile-view">
+                                <div class="tag-type1">
+                                    <p>Catalog</p>
+                                </div>
+                                <div class="tag-type2">
+                                    <p>Chairs</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tag-type4">
+                                <p>With Background</p>
+                            </div>
+                            <div class="tag-type3">
+                                <p>White</p>
+                            </div>
+                        </div>
+                        <p class="spec-header">Beautiful Chair for Kids</p>
 
                         <div class="pricetag">
-                            <h1>$188.95</h1>
-                            <h3>$225.00</h3>
+                            <p class="price">$188.95</p>
+                            <p class="prev-price">$225.00</p>
                         </div>
                         <div class="description">
                             <p>Bring in the comfort to your house. Designed for comfort. Relax like a boss. 

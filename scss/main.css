@@ -3,7 +3,12 @@ body {
   background-position: center;
   background-size: cover;
   height: 100%;
+  font-family: 'Nunito Sans';
   width: 100%;
+}
+
+.rplogo {
+  margin: 8px;
 }
 
 .container {
@@ -28,6 +33,7 @@ body {
   font-weight: bold;
   color: white;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .container p {
@@ -54,8 +60,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px 50px;
-  padding-bottom: 30px;
+  padding: 20px 50px;
   margin-top: 20px;
   width: 420px;
 }
@@ -109,7 +114,7 @@ body {
 }
 
 .button {
-  margin-top: 4%;
+  margin-top: 8%;
   width: 20%;
   padding: 14px;
   background-color: #3ca5eb;
@@ -159,7 +164,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 20%;
-    width: 75%;
+    width: 72%;
   }
   .form-container .form-header {
     color: black;
