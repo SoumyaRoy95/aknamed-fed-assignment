@@ -15,17 +15,16 @@ header{
         background-color: black;
         height: 56px;
     }
-    .avatar {
-        vertical-align: middle;
-        width: 30px;
-        height: 30px;
-        border-radius: 30%;
-        padding: 8px;
-      }
-}
-
-.avatar-style{
-    padding-right: 10px;
+    .avatar-style{
+        padding-right: 10px;
+        img {
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
+            border-radius: 30%;
+            padding: 8px;
+          }
+    }    
 }
 
 .dashboard {
@@ -76,22 +75,6 @@ header{
     background: linear-gradient(to left, rgb(204, 236, 247) 98%, rgb(2, 131, 182) 2%);
 }
 
-
-.toggle-button {
-    position: absolute;
-    display: none;
-    left: 105%;
-    top: 15px;
-    span {
-        display: block;
-        background-color: black;
-        height: 3px;
-        width: 25px;
-        margin: 2px;
-    }
-    
-}
-
 .main-bar{
     display: flex;
     flex-direction: column;
@@ -113,34 +96,44 @@ header{
     padding: 5px;
 }
 
-.total-profit {
+.profit {
     background-color: white;
     width: 45%;
     padding: 15px;
     border-radius: 10px;
+    margin-right: 2%;
     p {
         font-size: 13px;
         margin-top: 2px;
-        color: gray;
         margin-bottom: 15px;
     }
 
 }
 
+.info-design {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 .info {
     display: flex;
     justify-content: space-between;
-    .info-profit {
-        color: black;
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-
     .value {
         font-size: 23px;
         font-weight: bold;
+    }
+    .blue{
         color: blue;
+    }
+    .red{
+        color: red;
+    }
+    .green{
+        color: green;
+    }
+    .grey{
+        color: grey;
     }
 }
 
@@ -149,11 +142,25 @@ header{
     border-radius: 20px;
     height: 10px;
     width: 95%;
-    .progress-profit {
-        background-color: blue;
+    .progress-bar {
         border-radius: 20px;
         height: 10px;
+    }
+    .profit-bar{
+        background-color: blue;
         width: 70%;
+    }
+    .feedback-bar{
+        background-color: green;
+        width: 89%;
+    }
+    .new-orders-bar{
+        background-color: red;
+        width: 55%;
+    }
+    .new-users-bar{
+        background-color: grey;
+        width: 60%;
     }
 }
 
@@ -161,134 +168,8 @@ header{
     display: flex;
     justify-content: space-between;
     margin-top: 3px;
-}
-
-.feedback{
-    background-color: white;
-    width: 45%;
-    margin-left: 2%;
-    border-radius: 10px;
-    padding: 15px;
-    p {
-        font-size: 13px;
-        margin-top: 2px;
+    p{
         color: gray;
-        margin-bottom: 15px;
-    }
-}
-
-.info1 {
-    display: flex;
-    justify-content: space-between;
-    .info-feedback {
-        color: black;
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-    .value {
-        font-size: 23px;
-        font-weight: bold;
-        color: green;
-    }
-}
-
-.progress-feedback{
-    background-color: lightgray;
-    border-radius: 20px;
-    height: 10px;
-    width: 95%;
-    .progress-feedback-status {
-        background-color: green;
-        border-radius: 20px;
-        height: 10px;
-        width: 89%;
-    }
-}
-
-.new-profits{
-    background-color: white;
-    width: 45%;
-    border-radius: 10px;
-    padding: 15px;
-    p {
-        font-size: 13px;
-        margin-top: 2px;
-        color: gray;
-        margin-bottom: 15px;
-    }
-}
-
-.new-info {
-    display: flex;
-    justify-content: space-between;
-    .info-new-orders{
-        color: black;
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-    .value {
-        font-size: 23px;
-        font-weight: bold;
-        color: red;
-    }
-}
-
-.progress-newinfo{
-    background-color: lightgray;
-    border-radius: 20px;
-    height: 10px;
-    width: 95%;
-    .progress-newinfo-status {
-        background-color: red;
-        border-radius: 20px;
-        height: 10px;
-        width: 55%;
-    }
-}
-
-.new-users{
-    background-color: white;
-    width: 45%;
-    margin-left: 2%;
-    border-radius: 10px;
-    padding: 15px;
-    .info-new-users{
-        color: black;
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-    p {
-        font-size: 13px;
-        margin-top: 2px;
-        color: gray;
-        margin-bottom: 15px;
-    }
-}
-
-.new-userinfo {
-    display: flex;
-    justify-content: space-between;
-
-    .value {
-        font-size: 23px;
-        font-weight: bold;
-        color: gray;
-    }
-}
-
-.progress-newuserinfo{
-    background-color: lightgray;
-    border-radius: 20px;
-    height: 10px;
-    width: 95%;
-    .progress-newuserinfo-status {
-        background-color: gray;
-        border-radius: 20px;
-        height: 10px;
-        width: 55%;
     }
 }
 
@@ -350,6 +231,7 @@ header{
         color: #000;
         font-size: 21px;
         font-weight: bold;
+        padding-top: 25px;
     }
     .mastercard {
         display: flex;
@@ -427,6 +309,7 @@ header{
         display: flex;
     }
     .member-card-circle{
+        background-color: orange;
         position: relative;
         display: flex;
         align-items: center;
@@ -440,56 +323,22 @@ header{
             color: white;
         }
     }
-    .member-card-circle1{
-        position: relative;
-        display: flex;
+    .circle1{
+        background-color: lightskyblue;
         left: 10%;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        width: 45px;
-        height: 45px;
-        p{
-            font-size: 12px;
-            font-weight: bold;
-            color: white;
-        }
     }
-    .member-card-circle2{
-        position: relative;
-        display: flex;
+    .circle2{
+        background-color: lightseagreen;
         left: 20%;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        width: 45px;
-        height: 45px;
-        p{
-            font-size: 12px;
-            font-weight: bold;
-            color: white;
-        }
     }
-    .member-card-circle3{
-        position: relative;
-        display: flex;
+    .circle3{
+        background-color: orchid;
         left: 30%;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        width: 45px;
-        height: 45px;
-        p{
-            font-size: 12px;
-            font-weight: bold;
-            color: white;
-        }
     }
 }
 
 @media screen and (max-width: 600px) {
     body{
-        background-color: lightgrey;
         width: 100%;
     }
     header{
@@ -513,7 +362,6 @@ header{
     }
     
     .sidebar{
-        display: flex;
         background-color: white;
         position: fixed;
         top: 0;
@@ -547,55 +395,23 @@ header{
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(2px);
             visibility: hidden;
             opacity: 0;
         }
         .main-bar-header {
             font-size: 15px;
-            font-weight: bold;
+            margin-top: 2%;
             padding: 10px 5px;
         }
     }
     .holders {
         flex-direction: column;
-
+        padding: 0;
     }
-    .total-profit{
+    .profit{
         width: 88%;
         margin-bottom: 10px;
         .info-profit{
-            font-size: 14px;
-        }
-        .value{
-            font-size: 21px;
-        }
-    }
-    .feedback{
-        width: 88%;
-        margin-left: 0;
-        .info-feedback{
-            font-size: 14px;
-        }
-        .value{
-            font-size: 21px;
-        }
-    }
-    .new-profits{
-        width: 88%;
-        margin-bottom: 10px;
-        .info-new-orders{
-            font-size: 14px;
-        }
-        .value{
-            font-size: 21px;
-        }
-    }
-    .new-users{
-        width: 88%;
-        margin-bottom: 10px;
-        margin-left: 0;
-        .info-new-users{
             font-size: 14px;
         }
         .value{

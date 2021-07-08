@@ -33,7 +33,9 @@ body{
 }
 
 #wrong-creds{
-    display: none;
+    position: absolute;
+    top: 104%;
+    visibility: hidden;
     p{
         color: red;
     }
@@ -52,6 +54,7 @@ body{
         text-align: left;
         font-size: 20px;
         font-weight: bold;
+        text-transform: uppercase;
     }
 }
 .form-group{
@@ -59,19 +62,12 @@ body{
     display: flex;
     flex-direction: column;
     height: 60px;
-    margin-bottom: 3%;
+    margin: 3% 0;
     label {
         font-size: 14px;
         font-weight: bold;
     }
-    #username{
-        padding: 3%;
-        margin: 2% 0;
-        border: 1px solid rgb(224, 220, 220);
-        border-radius: 5px;
-        opacity: 0.6;
-    }
-    #password{
+    input{
         padding: 3%;
         margin: 2% 0;
         border: 1px solid rgb(224, 220, 220);
@@ -80,12 +76,13 @@ body{
     }
 }
 
-.rememberme{
-    border-bottom: 1px solid rgb(243, 236, 236);
+.rememberme {
+    border-bottom: 1px solid #f3ecec;
     padding: 4% 0;
-}
+  }
 
 .button{
+    cursor: pointer;
     margin-top: 8%;
     width: 20%;
     padding: 14px;
@@ -103,6 +100,7 @@ body{
 @media screen and (max-width: 600px){
     body{
         width: auto;
+        overflow-x: hidden;
     }
     .container{
         align-items: center;
@@ -127,6 +125,9 @@ body{
             color: black;
             font-size: 18px;
         }
+    }
+    #wrong-creds{
+        top: 93%;
     }
     .form-group{
         align-items: space-around;

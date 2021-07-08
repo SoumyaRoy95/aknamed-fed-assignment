@@ -28,16 +28,16 @@ header .logo {
   height: 56px;
 }
 
-header .avatar {
+header .avatar-style {
+  padding-right: 10px;
+}
+
+header .avatar-style img {
   vertical-align: middle;
   width: 30px;
   height: 30px;
   border-radius: 30%;
   padding: 8px;
-}
-
-.avatar-style {
-  padding-right: 10px;
 }
 
 .dashboard {
@@ -106,21 +106,6 @@ header .avatar {
   background: linear-gradient(to left, #ccecf7 98%, #0283b6 2%);
 }
 
-.toggle-button {
-  position: absolute;
-  display: none;
-  left: 105%;
-  top: 15px;
-}
-
-.toggle-button span {
-  display: block;
-  background-color: black;
-  height: 3px;
-  width: 25px;
-  margin: 2px;
-}
-
 .main-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,18 +137,24 @@ header .avatar {
   padding: 5px;
 }
 
-.total-profit {
+.profit {
   background-color: white;
   width: 45%;
   padding: 15px;
   border-radius: 10px;
+  margin-right: 2%;
 }
 
-.total-profit p {
+.profit p {
   font-size: 13px;
   margin-top: 2px;
-  color: gray;
   margin-bottom: 15px;
+}
+
+.info-design {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .info {
@@ -175,17 +166,25 @@ header .avatar {
           justify-content: space-between;
 }
 
-.info .info-profit {
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
 .info .value {
   font-size: 23px;
   font-weight: bold;
+}
+
+.info .blue {
   color: blue;
+}
+
+.info .red {
+  color: red;
+}
+
+.info .green {
+  color: green;
+}
+
+.info .grey {
+  color: grey;
 }
 
 .progress {
@@ -195,11 +194,29 @@ header .avatar {
   width: 95%;
 }
 
-.progress .progress-profit {
-  background-color: blue;
+.progress .progress-bar {
   border-radius: 20px;
   height: 10px;
+}
+
+.progress .profit-bar {
+  background-color: blue;
   width: 70%;
+}
+
+.progress .feedback-bar {
+  background-color: green;
+  width: 89%;
+}
+
+.progress .new-orders-bar {
+  background-color: red;
+  width: 55%;
+}
+
+.progress .new-users-bar {
+  background-color: grey;
+  width: 60%;
 }
 
 .change-status {
@@ -212,156 +229,8 @@ header .avatar {
   margin-top: 3px;
 }
 
-.feedback {
-  background-color: white;
-  width: 45%;
-  margin-left: 2%;
-  border-radius: 10px;
-  padding: 15px;
-}
-
-.feedback p {
-  font-size: 13px;
-  margin-top: 2px;
+.change-status p {
   color: gray;
-  margin-bottom: 15px;
-}
-
-.info1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.info1 .info-feedback {
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.info1 .value {
-  font-size: 23px;
-  font-weight: bold;
-  color: green;
-}
-
-.progress-feedback {
-  background-color: lightgray;
-  border-radius: 20px;
-  height: 10px;
-  width: 95%;
-}
-
-.progress-feedback .progress-feedback-status {
-  background-color: green;
-  border-radius: 20px;
-  height: 10px;
-  width: 89%;
-}
-
-.new-profits {
-  background-color: white;
-  width: 45%;
-  border-radius: 10px;
-  padding: 15px;
-}
-
-.new-profits p {
-  font-size: 13px;
-  margin-top: 2px;
-  color: gray;
-  margin-bottom: 15px;
-}
-
-.new-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.new-info .info-new-orders {
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.new-info .value {
-  font-size: 23px;
-  font-weight: bold;
-  color: red;
-}
-
-.progress-newinfo {
-  background-color: lightgray;
-  border-radius: 20px;
-  height: 10px;
-  width: 95%;
-}
-
-.progress-newinfo .progress-newinfo-status {
-  background-color: red;
-  border-radius: 20px;
-  height: 10px;
-  width: 55%;
-}
-
-.new-users {
-  background-color: white;
-  width: 45%;
-  margin-left: 2%;
-  border-radius: 10px;
-  padding: 15px;
-}
-
-.new-users .info-new-users {
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.new-users p {
-  font-size: 13px;
-  margin-top: 2px;
-  color: gray;
-  margin-bottom: 15px;
-}
-
-.new-userinfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.new-userinfo .value {
-  font-size: 23px;
-  font-weight: bold;
-  color: gray;
-}
-
-.progress-newuserinfo {
-  background-color: lightgray;
-  border-radius: 20px;
-  height: 10px;
-  width: 95%;
-}
-
-.progress-newuserinfo .progress-newuserinfo-status {
-  background-color: gray;
-  border-radius: 20px;
-  height: 10px;
-  width: 55%;
 }
 
 .table-group {
@@ -439,6 +308,7 @@ header .avatar {
   color: #000;
   font-size: 21px;
   font-weight: bold;
+  padding-top: 25px;
 }
 
 .card .mastercard {
@@ -543,6 +413,7 @@ header .avatar {
 }
 
 .members-para .member-card-circle {
+  background-color: orange;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -564,78 +435,23 @@ header .avatar {
   color: white;
 }
 
-.members-para .member-card-circle1 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.members-para .circle1 {
+  background-color: lightskyblue;
   left: 10%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
 }
 
-.members-para .member-card-circle1 p {
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
-}
-
-.members-para .member-card-circle2 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.members-para .circle2 {
+  background-color: lightseagreen;
   left: 20%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
 }
 
-.members-para .member-card-circle2 p {
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
-}
-
-.members-para .member-card-circle3 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.members-para .circle3 {
+  background-color: orchid;
   left: 30%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-}
-
-.members-para .member-card-circle3 p {
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
 }
 
 @media screen and (max-width: 600px) {
   body {
-    background-color: lightgrey;
     width: 100%;
   }
   header {
@@ -662,9 +478,6 @@ header .avatar {
     margin-left: auto;
   }
   .sidebar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     background-color: white;
     position: fixed;
     top: 0;
@@ -695,14 +508,12 @@ header .avatar {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
     visibility: hidden;
     opacity: 0;
   }
   .main-bar .main-bar-header {
     font-size: 15px;
-    font-weight: bold;
+    margin-top: 2%;
     padding: 10px 5px;
   }
   .holders {
@@ -710,46 +521,16 @@ header .avatar {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
   }
-  .total-profit {
+  .profit {
     width: 88%;
     margin-bottom: 10px;
   }
-  .total-profit .info-profit {
+  .profit .info-profit {
     font-size: 14px;
   }
-  .total-profit .value {
-    font-size: 21px;
-  }
-  .feedback {
-    width: 88%;
-    margin-left: 0;
-  }
-  .feedback .info-feedback {
-    font-size: 14px;
-  }
-  .feedback .value {
-    font-size: 21px;
-  }
-  .new-profits {
-    width: 88%;
-    margin-bottom: 10px;
-  }
-  .new-profits .info-new-orders {
-    font-size: 14px;
-  }
-  .new-profits .value {
-    font-size: 21px;
-  }
-  .new-users {
-    width: 88%;
-    margin-bottom: 10px;
-    margin-left: 0;
-  }
-  .new-users .info-new-users {
-    font-size: 14px;
-  }
-  .new-users .value {
+  .profit .value {
     font-size: 21px;
   }
   .table-group {

@@ -76,6 +76,10 @@ header .avatar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   height: 100%;
   width: 217px;
@@ -87,13 +91,12 @@ header .avatar {
 }
 
 .sidebar li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 10px 20px;
-  width: 110%;
+  width: 82%;
   cursor: pointer;
   margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -116,7 +119,7 @@ header .avatar {
 
 .sidebar hr {
   color: lightgrey;
-  width: 125%;
+  width: 91%;
   margin-left: 8px;
 }
 
@@ -127,8 +130,6 @@ header .avatar {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
   opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,12 +275,12 @@ header .avatar {
   margin-right: 2%;
 }
 
-.image-prod {
+.all-images .image-prod {
   border: 1px solid lightgray;
   margin-bottom: 2%;
 }
 
-.image-prod .arrow-up {
+.all-images .image-prod .arrow-up {
   margin: 10px;
   width: 0;
   height: 0;
@@ -287,7 +288,7 @@ header .avatar {
   border-top: 70px solid red;
 }
 
-.image-prod .arrow-up span {
+.all-images .image-prod .arrow-up span {
   position: relative;
   top: -40px;
   left: 10px;
@@ -300,11 +301,11 @@ header .avatar {
   display: block;
 }
 
-.sub-images {
+.all-images .sub-images {
   margin: 10px 0;
 }
 
-.sub-images .sub-img1 {
+.all-images .sub-images img {
   border: 1px solid lightgrey;
   width: 70px;
   height: 120px;
@@ -339,60 +340,42 @@ header .avatar {
   display: flex;
 }
 
-.specifications .clip-tags .tag-type1 {
+.specifications .clip-tags .tag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #f3f2f2;
+  margin-right: 5px;
+}
+
+.specifications .clip-tags .tag p {
+  font-size: 14px;
+  color: gray;
+}
+
+.specifications .clip-tags .type1 {
   -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
-  background-color: #f3f2f2;
   padding: 8px 20px;
   padding-right: 30px;
-  margin-right: 5px;
 }
 
-.specifications .clip-tags .tag-type1 p {
-  font-size: 14px;
-  color: gray;
-}
-
-.specifications .clip-tags .tag-type2 {
+.specifications .clip-tags .type2 {
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
           clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-  background-color: #f3f2f2;
   padding: 8px 30px;
-  margin-right: 5px;
 }
 
-.specifications .clip-tags .tag-type2 p {
-  font-size: 14px;
-  color: gray;
-}
-
-.specifications .clip-tags .tag-type3 {
+.specifications .clip-tags .type3 {
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
-  background-color: #f3f2f2;
   padding: 8px 30px;
-  margin-right: 5px;
 }
 
-.specifications .clip-tags .tag-type3 p {
-  font-size: 14px;
-  color: gray;
-}
-
-.specifications .clip-tags .tag-type4 {
+.specifications .clip-tags .type4 {
   -webkit-clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
           clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
-  background-color: #f3f2f2;
   padding: 8px 30px;
-  margin-right: 5px;
-}
-
-.specifications .clip-tags .tag-type4 p {
-  font-size: 14px;
-  color: gray;
 }
 
 .pricetag {
@@ -469,6 +452,7 @@ header .avatar {
           justify-content: center;
   padding: 2px;
   margin-right: 10px;
+  text-transform: uppercase;
 }
 
 .about-seller {
@@ -476,12 +460,9 @@ header .avatar {
   display: -ms-flexbox;
   display: flex;
   padding: 2% 0;
-  border-bottom: 1px solid lightgray;
-}
-
-.about-seller h4 {
   color: blue;
   text-decoration: underline;
+  border-bottom: 1px solid lightgray;
 }
 
 .addons-info {
@@ -596,13 +577,6 @@ header .avatar {
     background-color: black;
   }
   .sidebar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -615,7 +589,7 @@ header .avatar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80%;
+    width: 81%;
   }
   .sidebar hr {
     width: 90%;
@@ -638,7 +612,6 @@ header .avatar {
   }
   .specifications .spec-header {
     font-size: 33px;
-    font-weight: bold;
   }
   .specifications .clip-tags {
     -webkit-box-orient: vertical;
@@ -649,17 +622,13 @@ header .avatar {
   .specifications .clip-tags .mobile-view {
     margin-bottom: 5px;
   }
-  .specifications .clip-tags .tag-type1 {
+  .specifications .clip-tags .tag {
     width: 60px;
   }
-  .specifications .clip-tags .tag-type2 {
-    width: 60px;
-  }
-  .specifications .clip-tags .tag-type3 {
+  .specifications .clip-tags .type3 {
     margin-top: 5px;
-    width: 60px;
   }
-  .specifications .clip-tags .tag-type4 {
+  .specifications .clip-tags .type4 {
     width: 120px;
     margin: 5px 0;
   }
@@ -670,8 +639,6 @@ header .avatar {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
     visibility: hidden;
     opacity: 0;
   }

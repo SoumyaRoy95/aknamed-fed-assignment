@@ -61,6 +61,7 @@ header{
 
 .sidebar {
     display: flex;
+    flex-direction: column;
     position: relative;
     height: 100%;
     width: 217px;
@@ -69,9 +70,8 @@ header{
         padding-top: 10px;
     }
     li {
-        display: flex;
         padding: 10px 20px;
-        width: 110%;
+        width: 82%;
         cursor: pointer;
         margin: 10px 0;
         display: flex;
@@ -90,7 +90,7 @@ header{
     }
     hr {
         color: lightgrey;
-        width: 125%;
+        width: 91%;
         margin-left: 8px;
     }
 }
@@ -103,8 +103,6 @@ header{
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(2px);
-        // visibility: hidden;
         opacity: 1;
         display: flex;
         justify-content: center;
@@ -140,14 +138,10 @@ header{
             cursor: pointer;
         }
     }
-    
 }
-
 .modal-window{
     display: none;
 }
-
-
 
 .toggle-button {
     position: absolute;
@@ -210,37 +204,36 @@ header{
     display: flex;
     flex-direction: column;
     margin-right: 2%;
-}
-.image-prod {
-    border: 1px solid lightgray;
-    margin-bottom: 2%;
-    .arrow-up {
-        margin: 10px;
-        width: 0; 
-        height: 0; 
-        border-right: 70px solid transparent;
-        
-        border-top: 70px solid red;
-        span{
-            position:relative;
-            top: -40px;
-            left: 10px;
-            color: white;
-            font-size: 14px;
-            font-weight: bold;
-            transform: rotate(-45deg);
-            text-transform: uppercase;
-            display:block;
+    .image-prod {
+        border: 1px solid lightgray;
+        margin-bottom: 2%;
+        .arrow-up {
+            margin: 10px;
+            width: 0; 
+            height: 0; 
+            border-right: 70px solid transparent;
+            border-top: 70px solid red;
+            span{
+                position:relative;
+                top: -40px;
+                left: 10px;
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                transform: rotate(-45deg);
+                text-transform: uppercase;
+                display:block;
+            }
+          }
+    }
+    .sub-images{
+        margin: 10px 0;
+        img{
+            border: 1px solid lightgrey;
+            width: 70px;
+            height: 120px;
+            margin-right: 10px;
         }
-      }
-}
-.sub-images{
-    margin: 10px 0;
-    .sub-img1{
-        border: 1px solid lightgrey;
-        width: 70px;
-        height: 120px;
-        margin-right: 10px;
     }
 }
 
@@ -257,47 +250,33 @@ header{
         .mobile-view{
             display: flex;
         }
-        .tag-type1{
+        .tag{
             display: flex;
-            clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
             background-color: rgb(243, 242, 242);
+            margin-right: 5px;
+            p{
+                font-size: 14px;
+                color: gray;
+            }
+            
+        }
+        .type1{
+            clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
             padding: 8px 20px;
             padding-right: 30px;
-            margin-right: 5px;
-            p{
-                font-size: 14px;
-                color: gray;
-            }
         }
-        .tag-type2{
+
+        .type2{
             clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-            background-color: rgb(243, 242, 242);
             padding: 8px 30px;
-            margin-right: 5px;
-            p{
-                font-size: 14px;
-                color: gray;
-            }
         }
-        .tag-type3{
+        .type3{
             clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
-            background-color: rgb(243, 242, 242);
             padding: 8px 30px;
-            margin-right: 5px;
-            p{
-                font-size: 14px;
-                color: gray;
-            }
         }
-        .tag-type4{
+        .type4{
             clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
-            background-color: rgb(243, 242, 242);
             padding: 8px 30px;
-            margin-right: 5px;
-            p{
-                font-size: 14px;
-                color: gray;
-            }
         }
     }
 }
@@ -354,18 +333,16 @@ header{
         justify-content: center;
         padding: 2px;
         margin-right: 10px;
+        text-transform: uppercase;
     }
 }
 
 .about-seller {
     display: flex;
     padding: 2% 0;
+    color: blue;
+    text-decoration: underline;
     border-bottom: 1px solid lightgray;
-
-    h4 {
-        color: blue;
-        text-decoration: underline;
-    }
 }
 
 .addons-info{
@@ -454,25 +431,20 @@ header{
         background-color: black;
     }
     .sidebar{
-        display: flex;
-        flex-direction: column;
         position: fixed;
         top: 0;
         left: 0;
         margin: 0;
         z-index: 2;
-        transform: translateX(-217px);
-        
+        transform: translateX(-217px);     
         li{
             display: flex;
-            width: 80%;
+            width: 81%;
         }
-
         hr {
             width: 90%;
             margin-left: 8px;
-        }
-        
+        }      
     }
     .product-image{
         display: flex;
@@ -489,24 +461,19 @@ header{
     .specifications {
         .spec-header{
             font-size: 33px;
-            font-weight: bold;
         }
         .clip-tags{
             flex-direction: column;
             .mobile-view{
                 margin-bottom: 5px;
             }
-            .tag-type1{
+            .tag{
                 width: 60px;
             }
-            .tag-type2{
-                width: 60px;
-            }
-            .tag-type3{
+            .type3{
                 margin-top: 5px;
-                width: 60px;
             }
-            .tag-type4{
+            .type4{
                 width: 120px;
                 margin: 5px 0;
             }
@@ -520,7 +487,6 @@ header{
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(2px);
             visibility: hidden;
             opacity: 0;
         }
