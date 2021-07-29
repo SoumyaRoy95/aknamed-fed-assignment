@@ -29,7 +29,12 @@ function overlay_products(){
     const products_container = document.querySelector('.products-container');
     products_container.classList.remove("sidebar-open")
 }
-        
+
+window.onclick = function(e){
+    if(!document.querySelector(".avatar-style").contains(e.target)){
+        document.querySelector('.container').classList.remove("logout-open")
+    }
+}
 
 function logout(){
     const container = document.querySelector('.container');

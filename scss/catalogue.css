@@ -6,9 +6,7 @@
 
 .logout {
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   background-color: white;
   border: 1px solid lightgrey;
   -webkit-box-shadow: 1px 3px 2px lightgrey;
@@ -17,7 +15,6 @@
   width: 90px;
   position: absolute;
   right: 1%;
-  opacity: 0;
 }
 
 .logout i {
@@ -31,7 +28,9 @@
 }
 
 .logout-open .logout {
-  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header {
@@ -151,12 +150,13 @@ header .avatar-style img {
   display: -ms-flexbox;
   display: flex;
   border: 1px solid lightgray;
-  border-radius: 25%;
+  border-radius: 35%;
   font-size: 12px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2px 5px;
+  padding: 2px;
+  width: 20px;
   margin-right: 5px;
   text-transform: uppercase;
 }
@@ -205,7 +205,7 @@ header .avatar-style img {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-  background-color: #f3f2f2;
+  background-color: #f1f4f8;
   margin-left: 28px;
 }
 
@@ -233,6 +233,7 @@ header .avatar-style img {
 }
 
 .product-card {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,8 +252,8 @@ header .avatar-style img {
 
 .product-card .arrow-up {
   position: relative;
-  top: 0;
-  left: -40%;
+  top: 4%;
+  left: -37%;
   margin: 10px;
   width: 0;
   height: 0;
@@ -278,20 +279,21 @@ header .avatar-style img {
 }
 
 .product-card .product-photo {
-  width: 250px;
-  height: 250px;
-  border-bottom: 1px solid lightgray;
+  width: 200px;
+  height: 220px;
 }
 
 .product-card .product-details {
+  border-top: 1px solid lightgray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 10px;
-  padding: 0 2px;
+  padding-top: 10px;
 }
 
 .product-card .product-details p {
@@ -392,7 +394,7 @@ header .avatar-style img {
   }
   .products-catalog {
     width: 100%;
-    padding-left: 20px;
+    padding: 20px;
   }
   .products-catalog .overlay {
     position: fixed;

@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./scss/sproduct.css" />
-    <script src="js/details.js"></script>
 </head>
 <body>
     <header>
@@ -36,10 +35,7 @@
             </ul>
         </div>
         <div class="product-details">
-            <div>
-                <button class="backbutton" onclick="toCatalogue()"><i class="fa fa-arrow-left"></i>  Back</button>
-            </div>
-            
+            <button class="backbutton" onclick="toCatalogue()"><i class="fa fa-arrow-left"></i>Back</button>  
             <div class="details">
                 <p class="details-header">product details</p>
                 <i class="overlay" onclick="overlay()"></i>
@@ -100,7 +96,7 @@
                                 <div class="pill">xl</div>
                             </div>
                         </div>
-                        <h4 class="about-seller">About Seller</h4>
+                        <h4 class="about-seller"><label onclick="modal_open()">About Seller</label></h4>
                         <div class="addons-info">
                             <div class="tabs">
                                 <div id="infotab" onclick="infoload()">
@@ -133,15 +129,15 @@
                 <h3>REDPANDA Basic HTML - CSS Basic Template FED</h3>
                 <p>Work alongside other engineers on the team to elevate technology and consistently apply best practices. Qualifications for Software Engineer.</p>
                 <p>Our foundations are built on a carefully crafted value system which guides our way of working and justifies the quality of our product</p>
-                <button class="alertpop" onclick="modal_open()"><i class="fa fa-arrow-up fa-lg"></i></button>
+                <button class="scrolltop"><i class="fa fa-arrow-up fa-lg"></i></button>
                 <div class="modal">
                     <div class="modal-overlay">
                         <div class="modal-window">
                             <div class="modal-header">
-                                <h2>KO Networks</h2>
+                                <div class="label">KO Networks</div>
                                 <i class="fa fa-close" onclick="modal_close()"></i>
                             </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio laudantium sit fugiat animi iusto quae nostrum, reiciendis blanditiis in delectus qui unde fuga! Eaque laudantium nisi laborum adipisci aliquid. Sequi.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio laudantium sit fugiat animi iusto quae nostrum, reiciendis blanditiis in delectus qui unde fuga! Eaque laudantium nisi laborum adipisci aliquid. Sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam libero maxime recusandae perferendis odit excepturi, velit nobis voluptatem sit quam qui voluptate dolores impedit eius sint! Voluptates, sunt numquam.</p>
                             <button onclick="modal_close()">Close</button>
                         </div>
                     </div>
@@ -149,5 +145,6 @@
             </div>
         </div>
     </div>
+    <script src="js/details.js"></script>
 </body>
 </html>

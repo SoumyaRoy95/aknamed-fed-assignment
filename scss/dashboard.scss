@@ -78,7 +78,7 @@ header{
 .main-bar{
     display: flex;
     flex-direction: column;
-    background-color: rgb(243, 242, 242);
+    background-color: rgb(241,244,248);
     flex: 1;
     padding-top: 10px;
     padding-left: 15px;
@@ -124,16 +124,16 @@ header{
         font-weight: bold;
     }
     .blue{
-        color: blue;
+        color: rgb(4,123,254);
     }
     .red{
         color: red;
     }
     .green{
-        color: green;
+        color: rgb(41,157,66);
     }
     .grey{
-        color: grey;
+        color: rgb(168,180,188);
     }
 }
 
@@ -147,20 +147,16 @@ header{
         height: 10px;
     }
     .profit-bar{
-        background-color: blue;
-        width: 70%;
+        background-color: rgb(4,123,254);
     }
     .feedback-bar{
-        background-color: green;
-        width: 89%;
+        background-color: rgb(71,191,138);
     }
     .new-orders-bar{
         background-color: red;
-        width: 55%;
     }
     .new-users-bar{
-        background-color: grey;
-        width: 60%;
+        background-color: rgb(172,183,191);
     }
 }
 
@@ -200,7 +196,7 @@ header{
     font-size: 0.9em;
     width: 100%;
     thead tr {
-        background-color: lightgray;
+        background-color: rgb(241,244,248);
         text-align: left;
         font-weight: bold;
     }
@@ -232,6 +228,7 @@ header{
         font-size: 21px;
         font-weight: bold;
         padding-top: 25px;
+        padding-bottom: 5px;
     }
     .mastercard {
         display: flex;
@@ -255,14 +252,14 @@ header{
 }
 
 .pricetag{
-    background-color: rgb(64, 172, 64);
+    background-color: rgb(71,191,138);
     position: relative;
     border-radius: 4px;
     top: 4%;
-    left: 32%;
-    box-shadow: 0 4px 4px 0 grey;
+    left: 36%;
+    box-shadow: 0 2px 5px 0 lightgray;
     display: flex;
-    width: 40%;
+    padding: 2px 15px;
     justify-content: center;
     p{
         font-size: 18px;
@@ -419,7 +416,7 @@ header{
         }
     }
     .table-group{
-        width: 85%;
+        width: 88%;
         .table-title{
             font-size: 14px;
         }
@@ -435,7 +432,7 @@ header{
         }
     }
     .referral-table{
-        
+        font-size: 0.65em;
         .salary{
             display: none;
         }
@@ -444,8 +441,7 @@ header{
     .pricetag{
         position: relative;
         top: 10px;
-        left: -29%;
-        width: 37%;
+        left: -33%;
         p{
             font-size: 16px;
         }

@@ -6,7 +6,7 @@
 
 .logout{
     cursor: pointer;
-    display: flex;
+    display: none;
     background-color: white;
     border: 1px solid lightgrey;
     box-shadow: 1px 3px 2px lightgrey;
@@ -14,7 +14,6 @@
     width: 90px;
     position: absolute;
     right: 1%;
-    opacity: 0;
     i{
         color: lightgrey;
     }
@@ -27,7 +26,7 @@
 
 .logout-open {
     .logout{
-        opacity: 1;
+        display: flex;
     }
 }
 .profile-icon{
@@ -115,26 +114,32 @@ header{
         flex-direction: column;
         background-color: white;
         width: 30%;
-        padding: 10px;
         .modal-header{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-bottom: 10px;
+            padding: 10px;
             border-bottom: 1px solid lightgray;
             i{
                 cursor: pointer;
+                color: gray;
+            }
+            .label{
+                font-size: 18px;
             }
         }
         p{
-            padding-bottom: 10px;
+            font-size: 12px;
+            padding: 10px;
+            padding-bottom: 25px;
             border-bottom: 1px solid lightgray;
         }
         button{
-            margin-left: auto;
-            margin-top: 5px;
-            padding: 10px;
+            background-color: white;
+            margin: 10px 10px 10px auto;
+            padding: 5px 10px;
             border: 1px solid lightgray;
+            border-radius: 10%;
             cursor: pointer;
         }
     }
@@ -170,7 +175,7 @@ header{
     display: flex;
     flex: 1;
     flex-direction: column;
-    background-color: rgb(243, 242, 242);
+    background-color: rgb(241,244,248);
     padding: 10px;
 }
 
@@ -182,6 +187,10 @@ header{
     border-radius: 10%;
     border: 1px solid white;
     margin-bottom: 15px;
+    width: 8%;
+    i{
+        padding-right: 5px;
+    }
 }
 
 .details {
@@ -207,8 +216,12 @@ header{
     .image-prod {
         border: 1px solid lightgray;
         margin-bottom: 2%;
+        img{
+            height: 400px;
+            width: 370px;
+        }
         .arrow-up {
-            margin: 10px;
+            margin: 20px 0 0 20px;
             width: 0; 
             height: 0; 
             border-right: 70px solid transparent;
@@ -224,13 +237,13 @@ header{
                 text-transform: uppercase;
                 display:block;
             }
-          }
+        }
     }
     .sub-images{
         margin: 10px 0;
         img{
             border: 1px solid lightgrey;
-            width: 70px;
+            width: 80px;
             height: 120px;
             margin-right: 10px;
         }
@@ -252,11 +265,11 @@ header{
         }
         .tag{
             display: flex;
-            background-color: rgb(243, 242, 242);
+            background-color: rgb(237,240,244);
             margin-right: 5px;
             p{
                 font-size: 14px;
-                color: gray;
+                color: rgb(142,140,163);
             }
             
         }
@@ -291,7 +304,7 @@ header{
     .price {
         font-size: 31px;
         font-weight: bold;
-        margin-right: 50px;
+        margin-right: 20px;
     }
     .prev-price {
         font-size: 18px;
@@ -307,7 +320,6 @@ header{
     padding-top: 2%;
     p {
         font-size: 14px;
-        color: gray;
     }
 }
 
@@ -328,21 +340,24 @@ header{
     .pill {
         display: flex;
         border: 1px solid lightgray;
-        border-radius: 25%;
-        width: 30px;
+        border-radius: 35%;
+        width: 25px;
+        font-size: 14px;
         justify-content: center;
-        padding: 2px;
+        padding: 1px;
         margin-right: 10px;
         text-transform: uppercase;
     }
 }
 
 .about-seller {
-    display: flex;
     padding: 2% 0;
-    color: blue;
+    color: #078FFE;
     text-decoration: underline;
     border-bottom: 1px solid lightgray;
+    label{
+        cursor: pointer;
+    }
 }
 
 .addons-info{
@@ -359,16 +374,15 @@ header{
 
 #infotab {
     padding: 2%;
+    padding-top: 3%;
     cursor: pointer;
-    border-bottom: 2px solid blue;
-    h4{
-        color: gray;
-    }
+    border-bottom: 3px solid #078FFE;
 }
 #desctab {
     padding: 2%;
+    padding-top: 3%;
     cursor: pointer;
-    h4{
+    #desctablabel{
         color: gray;
     }
 }
@@ -393,7 +407,7 @@ header{
 .footer{
     display: flex;
     flex-direction: column;
-    background-color: lightgrey;
+    background-color: rgb(228,233,239);
     padding: 3%;
     margin-top: 3%;
     h3{
@@ -402,12 +416,12 @@ header{
     p {
         margin-bottom: 1%;
     }
-    .alertpop {
+    .scrolltop {
         border: hidden;
         padding: 10px;
         color: white;
         cursor: pointer;
-        background-color: rgb(187, 187, 187);
+        background-color: rgb(210,217,229);
         margin-left: auto;
     }
 }
@@ -446,6 +460,9 @@ header{
             margin-left: 8px;
         }      
     }
+    .backbutton{
+        width: 18%;
+    }
     .product-image{
         display: flex;
         flex-direction: column;
@@ -480,6 +497,7 @@ header{
         }
     }
     .details{
+        padding: 20px;
         .overlay{
             position: fixed;
             top: 0;
@@ -501,6 +519,18 @@ header{
             border: 1px solid lightgrey;
             width: 70px;
             height: 120px;
+        }
+    }
+    .all-images{
+        .image-prod{
+            img{
+                width: 340px;
+            }
+        }
+        .sub-images{
+            img{
+                width: 90px;
+            }
         }
     }
     .pricetag {
