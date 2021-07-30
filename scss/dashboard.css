@@ -404,13 +404,13 @@ header .avatar-style img {
 
 .members-para .member-holders {
   margin-left: auto;
+  margin-right: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .members-para .member-card-circle {
-  background-color: orange;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,27 +424,9 @@ header .avatar-style img {
   border-radius: 50%;
   width: 45px;
   height: 45px;
-}
-
-.members-para .member-card-circle p {
   font-size: 12px;
   font-weight: bold;
   color: white;
-}
-
-.members-para .circle1 {
-  background-color: lightskyblue;
-  left: 10%;
-}
-
-.members-para .circle2 {
-  background-color: lightseagreen;
-  left: 20%;
-}
-
-.members-para .circle3 {
-  background-color: orchid;
-  left: 30%;
 }
 
 @media screen and (max-width: 600px) {

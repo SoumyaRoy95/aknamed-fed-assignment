@@ -20,3 +20,79 @@ const newUsersBar = document.querySelector('.new-users-bar')
 const newUsersBarMeasure = document.querySelector('.new-users-bar-measure')
 newUsersBarMeasure.innerHTML = percentageValues[1] + "%"
 newUsersBar.style.width = percentageValues[1] + "%"
+
+const team1 = document.querySelector('.team1')
+const teamA = ["ZAI", "MD", "CDS", "BDD"]
+teamA.map((elementName, index) => {
+    const element = document.createElement('div')
+    element.classList.add("member-card-circle")
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+      element.style.backgroundColor = getRandomColor();
+      element.style.left = ((teamA.length - index -1)*10)+"%"
+      element.innerHTML = elementName
+      team1.appendChild(element)
+})
+
+const team2 = document.querySelector('.team2')
+const teamB = ["ZAI", "MD", "CDS"]
+teamB.map((elementName, index) => {
+    const element = document.createElement('div')
+    element.classList.add("member-card-circle")
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+      element.style.backgroundColor = getRandomColor();
+      element.style.left = ((teamB.length - index -1)*10)+"%"
+      element.innerHTML = elementName
+      team2.appendChild(element)
+})
+
+const team3 = document.querySelector('.team3')
+const teamC = ["ABL", "BOK"]
+teamC.map((elementName, index) => {
+    const element = document.createElement('div')
+    element.classList.add("member-card-circle")
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+      element.style.backgroundColor = getRandomColor();
+      element.style.left = ((teamC.length - index -1)*10)+"%"
+      element.innerHTML = elementName
+      team3.appendChild(element)
+})
+
+const team4 = document.querySelector('.team4')
+const teamD = ["ABL", "BOK", "KSF", "IMK"]
+teamD.map((elementName, index) => {
+    const element = document.createElement('div')
+    element.classList.add("member-card-circle")
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+      element.style.backgroundColor = getRandomColor();
+      element.style.left = ((teamD.length - index -1)*10)+"%"
+      element.innerHTML = elementName
+      team4.appendChild(element)
+})

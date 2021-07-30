@@ -303,10 +303,10 @@ header{
     margin-bottom: 15px;
     .member-holders{
         margin-left: auto;
+        margin-right: 5px;
         display: flex;
     }
     .member-card-circle{
-        background-color: orange;
         position: relative;
         display: flex;
         align-items: center;
@@ -314,23 +314,9 @@ header{
         border-radius: 50%;
         width: 45px;
         height: 45px;
-        p{
-            font-size: 12px;
-            font-weight: bold;
-            color: white;
-        }
-    }
-    .circle1{
-        background-color: lightskyblue;
-        left: 10%;
-    }
-    .circle2{
-        background-color: lightseagreen;
-        left: 20%;
-    }
-    .circle3{
-        background-color: orchid;
-        left: 30%;
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
     }
 }
 
